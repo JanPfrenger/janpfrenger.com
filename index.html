@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <div class="page">
@@ -16,84 +16,57 @@
         <header class="header">
             <a href="/" class="logo">jan pfrenger</a>
             <nav class="nav-links">
+                <a href="/now">now</a>
+                <a href="/about">about</a>
                 <a href="/essays">essays</a>
                 <a href="/cv">cv</a>
-                <a href="https://linkedin.com/in/janpfrenger" target="_blank">linkedin</a>
-                <a href="https://github.com/janpfrenger" target="_blank">github</a>
-                <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">&bull;</button>
+                <button class="theme-btn" id="themeToggle" aria-label="Toggle theme"></button>
             </nav>
         </header>
 
         <main>
 
-            <!-- Intro -->
             <section class="intro">
-                <div class="intro-photo">
-                    <img src="assets/jan-photo.jpg" alt="Jan Pfrenger" />
-                </div>
-                <div class="intro-text">
-                    <p>hi, i'm jan. i study industrial engineering at <a href="https://www.kit.edu" target="_blank">KIT</a> in karlsruhe and work on battery energy storage at <a href="#" class="highlight">arteus energy</a>. previously at <a href="#" class="highlight">terra one</a>.</p>
-                    <p>i co-lead the <a href="https://youngfounders.network/" target="_blank" class="highlight">young founders network</a> chapter in karlsruhe, organize <a href="https://www.meetup.com/karlsruhe-cold-swimmer/" target="_blank" class="highlight">ice baths</a> in local rivers, and build things on the side.</p>
-                    <p>i like building things that bring people together.</p>
+                <img src="/assets/jan-photo.jpg" alt="Jan Pfrenger" class="avatar" />
+                <div>
+                    <p>hi, i'm jan. i study industrial engineering at <a href="https://www.kit.edu" target="_blank">KIT</a> in karlsruhe and work on battery energy storage at <a href="#" class="hl">arteus energy</a>. previously at <a href="#" class="hl">terra one</a>.</p>
+                    <p>i co-lead the <a href="https://youngfounders.network/" target="_blank" class="hl">young founders network</a> chapter in karlsruhe, organize <a href="https://www.meetup.com/karlsruhe-cold-swimmer/" target="_blank" class="hl">ice baths</a> in local rivers, and build things on the side.</p>
+                    <p>here's what i'm doing <a href="/now">now</a>. more <a href="/about">about me</a>.</p>
                 </div>
             </section>
 
-            <hr class="divider">
+            <hr>
 
-            <!-- Now -->
-            <section class="section">
-                <h2>now</h2>
+            <section>
+                <h2>Projects</h2>
                 <ul>
-                    <li>working student at <strong>Arteus Energy</strong> &mdash; growth & project management for battery energy storage systems (BESS). karlsruhe, since mar 2026.</li>
-                    <li>studying <strong>B.Sc. Industrial Engineering & Management</strong> at KIT, since oct 2024. running with KIT Run, throwing people around at Judo club.</li>
-                    <li>co-leading <strong>YFN Karlsruhe</strong> &mdash; organizing events, connecting young founders across the DACH region. 1,800+ members network-wide.</li>
-                    <li>organizing weekly <strong>cold plunges</strong> at lakes and rivers around karlsruhe. grew the community 3x since starting in nov 2024.</li>
+                    <li><a href="https://youngfounders.network/" target="_blank">Young Founders Network</a> &mdash; co-lead of the karlsruhe chapter. non-profit for young founders under 25. 1,800+ members across DACH.</li>
+                    <li><a href="https://ersti-hilfe.lovable.app" target="_blank">Ersti-Hilfe</a> &mdash; a survival guide for first-year students at KIT.</li>
+                    <li>Archaive <span class="muted">(private)</span> &mdash; digital archive tool, built with TypeScript.</li>
+                    <li><a href="https://swimma-app.lovable.app" target="_blank">Swimma</a> &mdash; swimming companion app. track sessions, find spots.</li>
+                    <li><a href="https://www.meetup.com/karlsruhe-cold-swimmer/" target="_blank">Eisbaden Karlsruhe</a> &mdash; weekly cold-plunge community. grew 3x since nov 2024.</li>
                 </ul>
+                <p>more projects can be found on <a href="https://github.com/janpfrenger" target="_blank">github</a>.</p>
             </section>
 
-            <hr class="divider">
+            <hr>
 
-            <!-- Projects -->
-            <section class="section">
-                <h2>projects</h2>
+            <section>
+                <h2>Writing</h2>
                 <ul>
-                    <li><a href="https://youngfounders.network/" target="_blank">Young Founders Network</a> &mdash; co-lead of the karlsruhe chapter. non-profit collective of 1,800+ young founders and startup enthusiasts under 25 across DACH. team member since apr 2024, co-lead since 2025.</li>
-                    <li><a href="https://ersti-hilfe.lovable.app" target="_blank">Ersti-Hilfe</a> &mdash; a guide for first-year students at KIT. enrollment, campus life, first semester survival.</li>
-                    <li>Archaive <span class="muted">(private)</span> &mdash; a digital archive tool built with TypeScript.</li>
-                    <li><a href="https://swimma-app.lovable.app" target="_blank">Swimma</a> &mdash; swimming companion app. track sessions, find spots, connect with swimmers.</li>
-                    <li><a href="https://www.meetup.com/karlsruhe-cold-swimmer/" target="_blank">Eisbaden Karlsruhe</a> &mdash; organizing weekly cold-swimming sessions. community building through shared discomfort.</li>
+                    <li><a href="/essays/cold-water-teaches-you-everything">What Cold Water Teaches You About Everything</a> <span class="muted">Mar 2026</span></li>
+                    <li><a href="/essays/building-yfn-karlsruhe">Building YFN Karlsruhe from Zero</a> <span class="muted">Feb 2026</span></li>
+                    <li><a href="/essays/from-chemistry-to-energy">From Chemistry Prize to Energy Storage</a> <span class="muted">Jan 2026</span></li>
                 </ul>
+                <p>more on the <a href="/essays">essays page</a>.</p>
             </section>
 
-            <hr class="divider">
+            <hr>
 
-            <!-- Before -->
-            <section class="section">
-                <h2>before</h2>
-                <ul>
-                    <li><strong>Terra One</strong> &mdash; project development, intern then working student. may 2024 &ndash; feb 2026, 1 yr 10 mos. berlin / remote. led nationwide coordination of grid connection processes for utility-scale BESS projects across germany. processed and structured 100+ GW of grid applications, received 28 GW formal feedback. <span class="muted">featured in handelsblatt.</span></li>
-                    <li><strong>Junity</strong> &mdash; part-time staff. oct 2021 &ndash; may 2024, 2 yrs 8 mos. friedberg. youth counselor at jugendzentrum junity, contributing to art camps, fostering creativity and personal growth.</li>
-                    <li><strong>Burggymnasium Friedberg</strong> &mdash; abitur in chemistry & english, jul 2020 &ndash; jun 2023. grade 1.7. graduated top of the class '23 in chemistry. <span class="muted">awarded the GDCh Prize by the Gesellschaft Deutscher Chemiker.</span></li>
-                </ul>
-            </section>
-
-            <hr class="divider">
-
-            <!-- Writing -->
-            <section class="section">
-                <h2>writing</h2>
-                <p class="muted">coming soon &mdash; i'm working on essays about energy storage, the startup ecosystem in germany, community building, and what jumping into freezing water teaches you about everything else.</p>
-                <p><a href="/essays">go to essays &rarr;</a></p>
-            </section>
-
-            <hr class="divider">
-
-            <!-- Contact -->
-            <section class="section">
-                <h2>contact</h2>
-                <p>always open for new projects, startup conversations, or just a cold plunge.</p>
-                <ul class="links-list">
-                    <li><a href="mailto:jan@janpfrenger.com">jan@janpfrenger.com</a></li>
+            <section>
+                <h2>Contact</h2>
+                <ul class="flat">
+                    <li><a href="mailto:jan@janpfrenger.com">email</a></li>
                     <li><a href="https://linkedin.com/in/janpfrenger" target="_blank">linkedin</a></li>
                     <li><a href="https://github.com/janpfrenger" target="_blank">github</a></li>
                     <li><a href="https://instagram.com/janvoran" target="_blank">instagram</a></li>
@@ -102,12 +75,9 @@
 
         </main>
 
-        <footer class="footer">
-            <span>&copy; 2025 jan pfrenger</span>
-            <span>karlsruhe, germany</span>
-        </footer>
+        <footer>&copy; 2025 jan pfrenger &middot; karlsruhe</footer>
 
     </div>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

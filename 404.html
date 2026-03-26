@@ -10,10 +10,22 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div class="page" style="justify-content:center; align-items:center; text-align:center;">
-        <p class="muted" style="font-family:var(--mono); font-size:48px; margin-bottom:16px;">404</p>
-        <p style="margin-bottom:24px;">this page doesn't exist.</p>
-        <a href="/">&larr; back home</a>
+    <div class="page">
+        <header class="header">
+            <a href="/" class="logo">jan pfrenger</a>
+            <nav class="nav-links">
+                <a href="/now">now</a>
+                <a href="/about">about</a>
+                <a href="/essays">essays</a>
+                <a href="/cv">cv</a>
+                <button class="theme-btn" id="themeToggle" aria-label="Toggle theme"></button>
+            </nav>
+        </header>
+        <main>
+            <h1>404</h1>
+            <p>this page doesn't exist. <a href="/">go home</a>.</p>
+        </main>
+        <footer>&copy; 2025 jan pfrenger &middot; karlsruhe</footer>
     </div>
     <script src="/script.js"></script>
 </body>
