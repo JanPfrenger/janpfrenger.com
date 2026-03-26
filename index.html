@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Pfrenger</title>
+    <meta name="description" content="Jan Pfrenger — Industrial Engineering student at KIT, working in energy storage, building communities.">
+    <meta name="author" content="Jan Pfrenger">
+    <meta property="og:title" content="Jan Pfrenger">
+    <meta property="og:description" content="Industrial Engineering student at KIT. Energy, startups, community.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://janpfrenger.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">jp<span class="accent-dot">.</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="/essays" class="nav-link-accent">Essays</a>
+            </div>
+            <div class="nav-right">
+                <a href="#contact" class="nav-cta">Contact</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-intro">Hi, I'm Jan</p>
+                <h1 class="hero-name">Building things<br>that bring people<br><span class="hero-name-accent">together.</span></h1>
+                <p class="hero-sub">Industrial Engineering student at KIT. Working in battery energy storage at Arteus Energy. Co-leading the Young Founders Network in Karlsruhe.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Get in touch</a>
+                    <a href="#projects" class="btn btn-ghost">View projects &darr;</a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <img src="assets/jan-photo.jpg" alt="Jan Pfrenger" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-label"><span>01</span> About</div>
+            <div class="about-layout">
+                <div class="about-main">
+                    <p class="text-large">I'm a startup enthusiast and Industrial Engineering student at the Karlsruhe Institute of Technology, passionate about energy, community, and building products that solve real problems.</p>
+                    <p class="text-body">After nearly two years at Terra One working on grid processes for utility-scale BESS projects across Germany, I joined Arteus Energy to support growth and project development in battery energy storage. Outside of work, I co-lead the YFN chapter in Karlsruhe and organize a cold-plunge community called Eisbaden Karlsruhe.</p>
+                </div>
+                <div class="about-sidebar">
+                    <div class="info-block">
+                        <h3 class="info-label">Location</h3>
+                        <p>Karlsruhe, Germany</p>
+                    </div>
+                    <div class="info-block">
+                        <h3 class="info-label">Education</h3>
+                        <p>B.Sc. Industrial Engineering<br>& Management, KIT</p>
+                    </div>
+                    <div class="info-block">
+                        <h3 class="info-label">Languages</h3>
+                        <p>German, English, French</p>
+                    </div>
+                    <div class="info-block">
+                        <h3 class="info-label">Interests</h3>
+                        <div class="tag-row">
+                            <span class="tag">Energy</span>
+                            <span class="tag">Startups</span>
+                            <span class="tag">Vibe Coding</span>
+                            <span class="tag">Community</span>
+                            <span class="tag">Running</span>
+                            <span class="tag">Judo</span>
+                            <span class="tag">Cold Plunging</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-label"><span>02</span> Projects</div>
+            <div class="projects-list">
+
+                <a href="https://youngfounders.network/" target="_blank" rel="noopener" class="project-row">
+                    <div class="project-row-left">
+                        <span class="project-index">01</span>
+                        <div>
+                            <h3 class="project-title">Young Founders Network</h3>
+                            <p class="project-type">Community &middot; Co-Lead</p>
+                        </div>
+                    </div>
+                    <p class="project-summary">Co-leading the Karlsruhe chapter of Germany's largest non-profit community for young founders under 25. 1,800+ members across the DACH region, organizing events, workshops, and connecting aspiring entrepreneurs.</p>
+                    <span class="project-link-icon">&nearr;</span>
+                </a>
+
+                <a href="https://ersti-hilfe.lovable.app" target="_blank" rel="noopener" class="project-row">
+                    <div class="project-row-left">
+                        <span class="project-index">02</span>
+                        <div>
+                            <h3 class="project-title">Ersti-Hilfe</h3>
+                            <p class="project-type">Web App</p>
+                        </div>
+                    </div>
+                    <p class="project-summary">A digital guide for first-year university students navigating their start at KIT. Helping freshmen find their way through enrollment, campus life, and the first semester.</p>
+                    <span class="project-link-icon">&nearr;</span>
+                </a>
+
+                <div class="project-row project-row-private">
+                    <div class="project-row-left">
+                        <span class="project-index">03</span>
+                        <div>
+                            <h3 class="project-title">Archaive</h3>
+                            <p class="project-type">Web App &middot; Private</p>
+                        </div>
+                    </div>
+                    <p class="project-summary">A digital archive tool built with TypeScript. Organizing and preserving content in a modern, accessible way.</p>
+                    <span class="project-link-icon lock-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </span>
+                </div>
+
+                <a href="https://swimma-app.lovable.app" target="_blank" rel="noopener" class="project-row">
+                    <div class="project-row-left">
+                        <span class="project-index">04</span>
+                        <div>
+                            <h3 class="project-title">Swimma</h3>
+                            <p class="project-type">Web App</p>
+                        </div>
+                    </div>
+                    <p class="project-summary">A swimming companion app for tracking sessions, discovering spots, and connecting with fellow swimmers.</p>
+                    <span class="project-link-icon">&nearr;</span>
+                </a>
+
+                <a href="https://www.meetup.com/karlsruhe-cold-swimmer/" target="_blank" rel="noopener" class="project-row">
+                    <div class="project-row-left">
+                        <span class="project-index">05</span>
+                        <div>
+                            <h3 class="project-title">Eisbaden Karlsruhe</h3>
+                            <p class="project-type">Community &middot; Organizer</p>
+                        </div>
+                    </div>
+                    <p class="project-summary">Organizing weekly cold-swimming sessions in local lakes and rivers. Grew community size 3x, managing social media presence and community growth since Nov 2024.</p>
+                    <span class="project-link-icon">&nearr;</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-label"><span>03</span> Experience</div>
+            <div class="exp-grid">
+                <div class="exp-column">
+                    <h3 class="exp-column-title">Work</h3>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <h4>Arteus Energy</h4>
+                            <span class="badge">Current</span>
+                        </div>
+                        <p class="exp-role">Working Student &mdash; Growth & Project Management (BESS)</p>
+                        <p class="exp-meta">Mar 2026 &ndash; Present &middot; Karlsruhe</p>
+                        <p class="exp-desc">Supporting growth initiatives and project development for battery energy storage systems. Contributing to pipeline development, stakeholder coordination, and operational projects.</p>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <h4>Terra One</h4>
+                        </div>
+                        <p class="exp-role">Project Development (Intern &rarr; Working Student)</p>
+                        <p class="exp-meta">May 2024 &ndash; Feb 2026 &middot; 1 yr 10 mos &middot; Berlin / Remote</p>
+                        <p class="exp-desc">Led nationwide coordination of grid connection processes for utility-scale BESS projects across Germany. Processed and structured 100+ GW of grid applications; received 28 GW formal feedback.</p>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <h4>Junity</h4>
+                        </div>
+                        <p class="exp-role">Part-time Staff</p>
+                        <p class="exp-meta">Oct 2021 &ndash; May 2024 &middot; 2 yrs 8 mos &middot; Friedberg</p>
+                        <p class="exp-desc">Youth counselor at Jugendzentrum Junity, contributing to art camps, fostering creativity and personal growth.</p>
+                    </div>
+                </div>
+
+                <div class="exp-column">
+                    <h3 class="exp-column-title">Education</h3>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <h4>Karlsruhe Institute of Technology</h4>
+                            <span class="badge">Current</span>
+                        </div>
+                        <p class="exp-role">B.Sc. Industrial Engineering & Management</p>
+                        <p class="exp-meta">Oct 2024 &ndash; Present</p>
+                        <p class="exp-desc">Activities: KIT Run & Judo club. Skills: Marketing Strategy, Management.</p>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <h4>Burggymnasium Friedberg</h4>
+                        </div>
+                        <p class="exp-role">Abitur &mdash; Chemistry & English</p>
+                        <p class="exp-meta">Jul 2020 &ndash; Jun 2023 &middot; Grade: 1.7</p>
+                        <p class="exp-desc">Graduated top of the class '23 in chemistry. Awarded the GDCh Prize for outstanding achievement by the Gesellschaft Deutscher Chemiker.</p>
+                    </div>
+
+                    <h3 class="exp-column-title" style="margin-top: 40px;">Volunteering</h3>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <h4>Young Founders Network</h4>
+                        </div>
+                        <p class="exp-role">Team Member & Co-Lead Chapter Karlsruhe</p>
+                        <p class="exp-meta">Apr 2024 &ndash; Present &middot; 2 yrs</p>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <h4>Eisbaden Karlsruhe</h4>
+                        </div>
+                        <p class="exp-role">Organizer & Lead</p>
+                        <p class="exp-meta">Nov 2024 &ndash; Present</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="contact-block">
+                <div class="section-label"><span>04</span> Contact</div>
+                <h2 class="contact-heading">Let's connect.</h2>
+                <p class="contact-sub">Open for new projects, startup conversations, or just a cold plunge.</p>
+                <div class="contact-row">
+                    <a href="https://linkedin.com/in/janpfrenger" target="_blank" rel="noopener" class="contact-pill">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/janpfrenger" target="_blank" rel="noopener" class="contact-pill">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        GitHub
+                    </a>
+                    <a href="https://instagram.com/janvoran" target="_blank" rel="noopener" class="contact-pill">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        Instagram
+                    </a>
+                    <a href="mailto:jan@janpfrenger.com" class="contact-pill">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>&copy; 2025 Jan Pfrenger</span>
+            <span>Karlsruhe, Germany</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* Essays page styles */
+
+.essays-page {
+    min-height: calc(100vh - 60px);
+    padding: 140px 24px 80px;
+}
+
+.essays-header {
+    margin-bottom: 56px;
+}
+
+.essays-header h1 {
+    font-size: clamp(36px, 5vw, 52px);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 12px;
+}
+
+.essays-header p {
+    font-size: 17px;
+    color: var(--text-2);
+    max-width: 520px;
+    line-height: 1.6;
+}
+
+/* Essay cards */
+.essay-card {
+    display: block;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--border);
+    transition: all .2s var(--ease);
+}
+
+.essay-card:first-child {
+    border-top: 1px solid var(--border);
+}
+
+.essay-card:hover {
+    padding-left: 12px;
+}
+
+.essay-card:hover .essay-card-title {
+    color: var(--accent);
+}
+
+.essay-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.essay-card-meta time {
+    font-size: 12px;
+    font-family: var(--mono);
+    color: var(--text-3);
+}
+
+.essay-tag {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    background: var(--accent-bg);
+    padding: 2px 8px;
+    border-radius: 100px;
+}
+
+.essay-card-title {
+    font-size: 22px;
+    font-weight: 650;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+    transition: color .2s;
+}
+
+.essay-card-excerpt {
+    font-size: 14px;
+    color: var(--text-2);
+    line-height: 1.6;
+    margin-bottom: 12px;
+    max-width: 640px;
+}
+
+.essay-card-read {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+/* Placeholder state */
+.essay-placeholder {
+    text-align: center;
+    padding: 80px 24px;
+    border: 1px dashed var(--border);
+    border-radius: 16px;
+}
+
+.essay-placeholder-icon {
+    color: var(--text-3);
+    margin-bottom: 20px;
+}
+
+.essay-placeholder h3 {
+    font-size: 20px;
+    font-weight: 650;
+    margin-bottom: 8px;
+}
+
+.essay-placeholder p {
+    font-size: 15px;
+    color: var(--text-2);
+    max-width: 440px;
+    margin: 0 auto;
+    line-height: 1.65;
+}
+
+/* Active nav state */
+.nav-link-active {
+    background: var(--accent-bg);
+}
