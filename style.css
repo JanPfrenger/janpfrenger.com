@@ -81,7 +81,7 @@ strong { font-weight:600; }
 .intro { display:flex; gap:20px; align-items:flex-start; margin:16px 0 0; }
 .avatar {
     width:80px; height:80px; border-radius:50%; object-fit:cover;
-    object-position:center top; flex-shrink:0;
+    object-position:center 25%; flex-shrink:0;
     border: 2px solid var(--avatar-border);
 }
 
