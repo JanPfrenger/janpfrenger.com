@@ -147,7 +147,7 @@ footer {
     .nav-links { gap:12px; }
     .nav-links a { font-size:13px; }
 
-    .intro { flex-direction:column; align-items:center; text-align:center; gap:14px; }
+    .intro { flex-direction:column; gap:14px; }
     .avatar { width:72px; height:72px; margin-top:0; }
 
     h1 { font-size:24px; }
