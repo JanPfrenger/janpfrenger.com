@@ -107,6 +107,10 @@ ul.flat li { margin:0; }
 
 .post-meta { font-family:var(--mono); font-size:13px; color:var(--text-2); margin-bottom:24px; }
 
+/* Content page favorites */
+li.fav a { color:#e55; }
+li.fav a:hover { color:#f77; }
+
 .post-body h3 { margin-top:28px; }
 .post-body p { margin-bottom:16px; }
 .post-body blockquote {
