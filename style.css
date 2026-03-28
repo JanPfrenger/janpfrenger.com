@@ -101,6 +101,22 @@ ul li { margin-bottom:10px; }
 ul.flat { list-style:none; padding:0; display:flex; gap:18px; flex-wrap:wrap; }
 ul.flat li { margin:0; }
 
+/* Favourites (marked red) */
+
+.fav {
+    color: #e55;
+}
+
+/* Sub-Note */
+
+.sub {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+    margin-left: 8px;
+}
+
 /* Subpages */
 .back { display:inline-block; font-size:14px; color:var(--text-2); margin-bottom:20px; }
 .back:hover { color:var(--text); }
