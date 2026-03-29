@@ -39,8 +39,28 @@ body {
 
 ::selection { background: var(--link); color: var(--bg); }
 
-a { color: var(--link); text-decoration:none; }
-a:hover { color: var(--link-h); }
+a {
+    color: var(--link);
+    text-decoration:none; 
+}
+
+a:hover {
+    color: var(--link-h);
+}
+
+/* Content page favorites -> Moved here specific coloring of links  */
+
+a.fav,
+.fav > a {
+  color: #e55;
+}
+
+a.fav:hover,
+.fav > a:hover {
+  color: #f77;
+}
+
+
 .hl { background: var(--hl); padding:1px 4px; border-radius:3px; }
 strong { font-weight:600; }
 .muted { color: var(--text-2); }
@@ -101,11 +121,6 @@ ul li { margin-bottom:10px; }
 ul.flat { list-style:none; padding:0; display:flex; gap:18px; flex-wrap:wrap; }
 ul.flat li { margin:0; }
 
-/* Favourites (marked red) */
-
-.fav {
-    color: #e55;
-}
 
 /* Sub-Note */
 
@@ -122,10 +137,6 @@ ul.flat li { margin:0; }
 .back:hover { color:var(--text); }
 
 .post-meta { font-family:var(--mono); font-size:13px; color:var(--text-2); margin-bottom:24px; }
-
-/* Content page favorites */
-li.fav a { color:#e55; }
-li.fav a:hover { color:#f77; }
 
 .post-body h3 { margin-top:28px; }
 .post-body p { margin-bottom:16px; }
