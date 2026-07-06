@@ -3,37 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects — Jan Pfrenger</title>
+    <title>Projects — Jan Pfrenger</title>
+    <meta name="description" content="Communities and software I'm building.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
+    <link rel="canonical" href="https://janpfrenger.com/projects">
 
-    <meta property="og:title" content="Jan Pfrenger" />
-    <meta property="og:description" content="Energy infrastructure, systems, and things I'm building." />
+    <meta property="og:title" content="Projects — Jan Pfrenger" />
+    <meta property="og:description" content="Communities and software I'm building." />
     <meta property="og:image" content="https://janpfrenger.com/assets/preview.png" />
-    <meta property="og:url" content="https://janpfrenger.com" />
+    <meta property="og:url" content="https://janpfrenger.com/projects" />
     <meta property="og:type" content="website" />
-    
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    <link rel="shortcut icon" href="/assets/favicon.ico">
 
-    <!-- Apple -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-
-    <!-- Android / PWA -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/assets/site.webmanifest">
 </head>
 <body>
     <div class="page">
         <header class="header">
-            <a href="/" class="logo"><img src="/assets/android-chrome-192x192.png" alt="Jan Pfrenger" class="logo"></a> 
+            <a href="/" class="logo">jan pfrenger</a>
             <nav class="nav-links">
                 <a href="/now">now</a>
                 <a href="/about">about</a>
-                <a href="/projects"><strong>projects</strong></a>
+                <a href="/projects" aria-current="page">projects</a>
                 <a href="/content">content</a>
                 <a href="/essays">essays</a>
                 <a href="/cv">cv</a>
@@ -42,42 +39,76 @@
         </header>
 
         <main>
-            <a href="/" class="back">&larr; jan pfrenger</a>
-            <h1>Projects</h1>
-            <p>Here are projects I've worked on lately. <span class="red-highlight">red items</span> are the ones that i spend most time with</p>
-            
+            <h1>projects</h1>
+            <p class="page-lead" style="margin-bottom:36px;">things i'm building — communities and software. <span class="red-highlight">red</span> means it gets most of my time right now.</p>
+
+            <section>
+                <h2>Communities</h2>
+
+                <div class="entry">
+                    <div class="entry-top">
+                        <a class="entry-title fav" href="https://youngfounders.network/" target="_blank" rel="noopener noreferrer">Young Founders Network Karlsruhe</a>
+                        <span class="entry-meta">2024 — now</span>
+                    </div>
+                    <p class="entry-desc">co-leading the karlsruhe chapter of a 1,900+ member founder community across DACH. organizing events and growing the local ecosystem — upcoming events <a href="https://luma.com/yfn-karlsruhe" target="_blank" rel="noopener noreferrer">on luma</a>.</p>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-top">
+                        <a class="entry-title" href="https://www.meetup.com/karlsruhe-cold-swimmer/" target="_blank" rel="noopener noreferrer">Eisbaden Karlsruhe</a>
+                        <span class="entry-meta">2024 — now</span>
+                    </div>
+                    <p class="entry-desc">weekly cold-plunge community in karlsruhe's rivers and lakes. grew 3x since i took it over. we swim year-round.</p>
+                </div>
+            </section>
+
             <hr>
 
-            <ul>
-            <li class="fav">
-                <a href="https://youngfounders.network/" target="_blank" rel="noopener noreferrer">Young Founders Network (Karlsruhe Chapter)</a>
-                <span class="muted">&middot; community</span>
-                <p class="sub">Co-leading the Karlsruhe chapter of a 1,900+ member DACH-wide founder community. Organizing events and growing the local ecosystem.</p>
-            </li>
+            <section>
+                <h2>Software</h2>
 
-            <li>
-                <a href="https://lovable.dev/@janpfrenger" target="_blank" rel="noopener noreferrer">Lovable projects</a>
-                <span class="muted">&middot; software</span>
-                <p class="sub">Various projects in development like Ersti-Hilfe (Survival guide for freshmen students), Swimma (AI swim trainer), Archaive (fast organizer for your personal files) and more.</p>
-                <p class="sub">Have input, feedback or want to work with me on these? Contact me via <a href="mailto:hello@janpfrenger.com" target="_blank" rel="noopener noreferrer">email</a> or on my <a href="https://linkedin.com/in/janpfrenger/" target="_blank" rel="noopener noreferrer">Linkedin</a>.</p>
+                <div class="entry">
+                    <div class="entry-top">
+                        <span class="entry-title">Archaive</span>
+                        <span class="entry-meta">AI · files</span>
+                    </div>
+                    <p class="entry-desc">AI-powered file organization — scans your messy downloads and documents folders and proposes a clean structure, automatically.</p>
+                </div>
 
-            </li>
+                <div class="entry">
+                    <div class="entry-top">
+                        <span class="entry-title">Swimma</span>
+                        <span class="entry-meta">app concept</span>
+                    </div>
+                    <p class="entry-desc">training plans for swimmers — what runna does for runners, but for the pool: adaptive plans plus smartwatch connectivity.</p>
+                </div>
 
-            <li>
-                <a href="https://www.meetup.com/karlsruhe-cold-swimmer/" target="_blank" rel="noopener noreferrer">Eisbaden Karlsruhe</a>
-                <span class="muted">&middot; community</span>
-                <p class="sub">Weekly cold plunge community in Karlsruhe. Grew significantly since joining in late 2024.</p>
-            </li>
-            </ul>
+                <div class="entry">
+                    <div class="entry-top">
+                        <a class="entry-title" href="https://erstie-support.lovable.app/" target="_blank" rel="noopener noreferrer">Ersti-Hilfe</a>
+                        <span class="entry-meta">web</span>
+                    </div>
+                    <p class="entry-desc">a practical survival guide for first-year university students in germany — study planning, learning tips, and the questions nobody dares to ask.</p>
+                </div>
 
-            <!--  <p class="muted" style="margin-top:24px;">more projects on my <a href="https://github.com/janpfrenger" target="_blank" rel="noopener noreferrer">github</a>.</p>  -->
+                <div class="entry">
+                    <div class="entry-top">
+                        <span class="entry-title">Content Intelligence</span>
+                        <span class="entry-meta">tooling</span>
+                    </div>
+                    <p class="entry-desc">personal knowledge pipeline that ingests saved youtube videos, extracts transcripts, and generates searchable summaries.</p>
+                </div>
 
+                <p class="muted" style="font-size:14px;">more experiments on <a href="https://github.com/janpfrenger" target="_blank" rel="noopener noreferrer">github</a> and <a href="https://lovable.dev/@janpfrenger" target="_blank" rel="noopener noreferrer">lovable</a>. want to build one of these with me? <a href="mailto:hello@janpfrenger.com">say hi</a>.</p>
+            </section>
 
-            <p class="muted" style="margin-top:24px;">this list will grow. last updated april 2026.</p>
-            
+            <p class="muted" style="margin-top:36px; font-family:var(--mono); font-size:12px;">last updated: july 2026</p>
         </main>
 
-        <footer>&copy; 2026 jan pfrenger &middot; All rights reserved &middot; Made with ❤️ in Karlsruhe</footer>
+        <footer>
+            <span>&copy; 2026 jan pfrenger</span>
+            <span>karlsruhe, germany</span>
+        </footer>
     </div>
     <script src="/script.js"></script>
 </body>

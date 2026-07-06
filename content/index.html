@@ -4,37 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Content I Like — Jan Pfrenger</title>
+    <meta name="description" content="Videos, essays, and projects that made me think differently.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
+    <link rel="canonical" href="https://janpfrenger.com/content">
 
-    <meta property="og:title" content="Jan Pfrenger" />
-    <meta property="og:description" content="Energy infrastructure, systems, and things I'm building." />
+    <meta property="og:title" content="Content I Like — Jan Pfrenger" />
+    <meta property="og:description" content="Videos, essays, and projects that made me think differently." />
     <meta property="og:image" content="https://janpfrenger.com/assets/preview.png" />
-    <meta property="og:url" content="https://janpfrenger.com" />
+    <meta property="og:url" content="https://janpfrenger.com/content" />
     <meta property="og:type" content="website" />
-    
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    <link rel="shortcut icon" href="/assets/favicon.ico">
 
-    <!-- Apple -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-
-    <!-- Android / PWA -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/assets/site.webmanifest">
 </head>
 <body>
     <div class="page">
         <header class="header">
-            <a href="/" class="logo"><img src="/assets/android-chrome-192x192.png" alt="Jan Pfrenger" class="logo"></a>
+            <a href="/" class="logo">jan pfrenger</a>
             <nav class="nav-links">
                 <a href="/now">now</a>
                 <a href="/about">about</a>
                 <a href="/projects">projects</a>
-                <a href="/content"><strong>content</strong></a>
+                <a href="/content" aria-current="page">content</a>
                 <a href="/essays">essays</a>
                 <a href="/cv">cv</a>
                 <button class="theme-btn" id="themeToggle" aria-label="Toggle theme"></button>
@@ -42,70 +39,78 @@
         </header>
 
         <main>
-            <a href="/" class="back">&larr; jan pfrenger</a>
-            <h1>Content I Like</h1>
-            <p>this isn't a "favorites" list. it's content that made me think differently, taught me something, projects I find cool or just genuinly enjoy. <span class="red-highlight">red items</span> are the ones that stuck with me the most.</p>
+            <h1>content i like</h1>
+            <p class="page-lead" style="margin-bottom:36px;">not a "favorites" list — content that made me think differently, taught me something, or that i just genuinely enjoy. <span class="red-highlight">red</span> means it stuck with me the most.</p>
 
-            
+            <!-- entry template:
+                 <li><a href="URL" target="_blank" rel="noopener noreferrer">Title</a> <span class="muted">&middot; (XXm)</span></li>
+                 red:  <li class="fav"> ...
+                 note: <p class="sub">* note text.</p>  (inside the li)          -->
+
+            <section>
+                <h2>Video Essays</h2>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=YmWgp4K9XuU" target="_blank" rel="noopener noreferrer">Critical essay on female leads in modern movies</a> <span class="muted">&middot; (13m)</span></li>
+                    <li><a href="https://www.youtube.com/watch?v=kY1Rua7jy48" target="_blank" rel="noopener noreferrer">The Ominous Black Paintings of Francisco Goya</a> <span class="muted">&middot; (40m)</span></li>
+                    <li class="fav"><a href="https://www.youtube.com/watch?v=PUWg905fGTA" target="_blank" rel="noopener noreferrer">What's so strange about The Forest? (2014)</a> <span class="muted">&middot; (3h 18m)</span>
+                        <p class="sub">* video essay on <a href="https://www.google.com/search?q=the+forest+(video+game)" target="_blank" rel="noopener noreferrer">The Forest</a> about storytelling in survival games and the importance of quality in software dev.</p>
+                    </li>
+                    <li><a href="https://www.youtube.com/watch?v=-pAcJ0lFu94" target="_blank" rel="noopener noreferrer">Taxi Driver — A Study of Masculinity &amp; Existentialism</a> <span class="muted">&middot; (10m)</span></li>
+                </ul>
+            </section>
+
             <hr>
 
-            <!--  normal Links:   <li><a href= "" target="_blank" rel="noopener noreferrer">  </a> <span class="muted">(XXm)</span></li>                 -->
-                            <!--  red links:      <li class="fav"><a href= "" target="_blank" rel="noopener noreferrer">  </a> <span class="muted">(XXm)</span></li>     -->
-                            <!--  sub-point:      <p class="sub"> * ___. </p>                     -->
-
-
-            
-            <h3>Video Essays</h3>
-                <ul>
-                    <li><a href= "https://www.youtube.com/watch?v=YmWgp4K9XuU" target="_blank" rel="noopener noreferrer"> Critical essay on female leads in modern movies </a> <span class="muted">&middot; (13m)</span></li>
-                    <li><a href= "https://www.youtube.com/watch?v=kY1Rua7jy48" target="_blank" rel="noopener noreferrer"> The Ominous Black Paintings of Francisco Goya </a> <span class="muted">&middot; (40m)</span></li>
-                    <li class="fav"><a href= "https://www.youtube.com/watch?v=PUWg905fGTA" target="_blank" rel="noopener noreferrer"> What's so strange about The Forest? (2014)</a> <span class="muted">&middot; (3h 18m)</span></li>
-                        <p class="sub"> * Video essay on <a href= "https://www.google.com/search?q=the+forest+(video+game)" target="_blank" rel="noopener noreferrer">The Forest</a> about storytelling in survival games and the importance of quality in software dev. </p>
-                    <li><a href= "https://www.youtube.com/watch?v=-pAcJ0lFu94" target="_blank" rel="noopener noreferrer"> Taxi Driver A Study of Masculinity & Existentialism </a> <span class="muted">&middot; (10m)</span></li>
-                </ul>
-
-
-            <h3>Projects</h3>
+            <section>
+                <h2>Projects</h2>
                 <ul>
                     <li><a href="https://www.youtube.com/watch?v=Nqxjfp4Gi0k" target="_blank" rel="noopener noreferrer">Salt based PCMs</a> <span class="muted">&middot; (28m)</span></li>
                     <li class="fav"><a href="https://www.youtube.com/watch?v=Mxd9UVtJ37Y" target="_blank" rel="noopener noreferrer">First Time Firing My New Rocket Propellant</a> <span class="muted">&middot; (27m)</span></li>
-                    <li><a href="https://www.youtube.com/watch?v=akqcQezTZPA" target="_blank" rel="noopener noreferrer">We Sold Our Startup & Filmed Everything!</a> <span class="muted">&middot; (26m)</span></li>
-                    <li><a href= "https://www.youtube.com/watch?v=y7VtSK23_Jg" target="_blank" rel="noopener noreferrer"> Chess 2.0 </a> <span class="muted">&middot; (14m)</span></li>
+                    <li><a href="https://www.youtube.com/watch?v=akqcQezTZPA" target="_blank" rel="noopener noreferrer">We Sold Our Startup &amp; Filmed Everything!</a> <span class="muted">&middot; (26m)</span></li>
+                    <li><a href="https://www.youtube.com/watch?v=y7VtSK23_Jg" target="_blank" rel="noopener noreferrer">Chess 2.0</a> <span class="muted">&middot; (14m)</span></li>
                 </ul>
+            </section>
 
+            <hr>
 
-            <h3>Other</h3>
+            <section>
+                <h2>Other</h2>
                 <ul>
-                    <li  class="fav"><a href="https://33-prozent.com/" target="_blank" rel="noopener noreferrer">33 Prozent</a> <span class="muted">&middot; (8m)</span>
-                                            <p class="sub"> * important project by some amazing people from YFN &ndash; still very much relevant today! </li>
+                    <li class="fav"><a href="https://33-prozent.com/" target="_blank" rel="noopener noreferrer">33 Prozent</a> <span class="muted">&middot; (8m)</span>
+                        <p class="sub">* important project by some amazing people from YFN &ndash; still very much relevant today!</p>
+                    </li>
                     <li><a href="https://www.youtube.com/watch?v=9fa9lVwHHqg" target="_blank" rel="noopener noreferrer">Slaughterbots</a> <span class="muted">&middot; (8m)</span></li>
-                    <li class="fav"><a href= "https://www.youtube.com/watch?v=HarjsbMkhLQ" target="_blank" rel="noopener noreferrer"> we play music until someone breaks our synths </a> <span class="muted">&middot; (28m)</span></li>
-                    <li><a href= "https://www.youtube.com/watch?v=QrR_gm6RqCo" target="_blank" rel="noopener noreferrer"> Mac Miller: NPR Music Tiny Desk Concert </a> <span class="muted">&middot; (17m)</span></li>
-                    <li><a href= "https://www.youtube.com/playlist?list=PLSY-acYEmU9bTrn6VDEjAAjveok9871k-" target="_blank" rel="noopener noreferrer"> Stéaviñ pronounces english words </a></li>
-                    <li><a href= "https://www.youtube.com/@JeaneyCollects" target="_blank" rel="noopener noreferrer"> Jeaney Collects </a></li>
-                    <li class="fav"><a href= "https://www.youtube.com/watch?v=MnrJzXM7a6o" target="_blank" rel="noopener noreferrer"> Steve Jobs introduces iPhone in 2007 </a> <span class="muted">&middot; (10m)</span></li>
-                    <li class="fav"><a href= "https://www.youtube.com/watch?v=SSpCoCe_Lm4" target="_blank" rel="noopener noreferrer"> Travis - Sing </a> <span class="muted">&middot; (4m)</span>
-                        <p class="sub"> * favourite song &ndash; stemming from my love of <a class="fav" href="https://www.google.com/search?q=the+office+us" target="_blank" rel="noopener noreferrer">The Office</a>.</p></li>
-                    <li><a href= "https://www.youtube.com/watch?v=2Jn1OeDlNpM" target="_blank" rel="noopener noreferrer"> Gravity Falls extended intro </a> <span class="muted">&middot; (3m)</span></li>
-                    <li><a href= "https://www.youtube.com/watch?v=vrk40pZ8Kc8" target="_blank" rel="noopener noreferrer"> Michael Reeves &ndash; a boring video </a> <span class="muted">&middot; (10m)</span>
-                        <p class="sub"> * Watching this guy makes me excited about mechatronics. </p></li>
-                    <li><a href= "https://www.youtube.com/watch?v=u35WIs62R2M" target="_blank" rel="noopener noreferrer"> Amazing Shots of CHRISTOPHER NOLAN </a> <span class="muted">&middot; (13m)</span></li>
-                    <li><a href= "https://www.youtube.com/watch?v=bJjCxjS7zTo" target="_blank" rel="noopener noreferrer"> Tom Platz & David Hoffmann train legs together </a> <span class="muted">&middot; (53m)</span></li>
-                    <li><a href= "https://www.youtube.com/watch?v=RBrt3D5rG9Q" target="_blank" rel="noopener noreferrer"> Mike Tyson Training Francis Ngannou </a> <span class="muted">&middot; (51m)</span></li>
-                    <li><a href="https://www.google.com/search?q=Come+and+See" target="_blank" rel="noopener noreferrer">Come and See (1985) </a> <span class="muted"> &middot; (2h 26m)</span>
-                        <p class="sub"> * Horrific anti-war movie on trauma and the destruction of a boys innocence.</p></li>
-                    <li class="fav"><a href= "https://www.youtube.com/watch?v=9IiTdSnmS7E" target="_blank" rel="noopener noreferrer"> Sisyphus and the Impossible Dream </a> <span class="muted">(12m)</span>
-                        <p class="sub"> * on resilience and discipline &ndash; also you <u>have</u> to watch <a class="fav" href="https://www.youtube.com/watch?v=-jCQerxzF48" target="_blank" rel="noopener noreferrer">DO IT ANYWAY</a> on excuses.</p></li>
-
+                    <li class="fav"><a href="https://www.youtube.com/watch?v=HarjsbMkhLQ" target="_blank" rel="noopener noreferrer">we play music until someone breaks our synths</a> <span class="muted">&middot; (28m)</span></li>
+                    <li><a href="https://www.youtube.com/watch?v=QrR_gm6RqCo" target="_blank" rel="noopener noreferrer">Mac Miller: NPR Music Tiny Desk Concert</a> <span class="muted">&middot; (17m)</span></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLSY-acYEmU9bTrn6VDEjAAjveok9871k-" target="_blank" rel="noopener noreferrer">Stéaviñ pronounces english words</a></li>
+                    <li><a href="https://www.youtube.com/@JeaneyCollects" target="_blank" rel="noopener noreferrer">Jeaney Collects</a></li>
+                    <li class="fav"><a href="https://www.youtube.com/watch?v=MnrJzXM7a6o" target="_blank" rel="noopener noreferrer">Steve Jobs introduces iPhone in 2007</a> <span class="muted">&middot; (10m)</span></li>
+                    <li class="fav"><a href="https://www.youtube.com/watch?v=SSpCoCe_Lm4" target="_blank" rel="noopener noreferrer">Travis — Sing</a> <span class="muted">&middot; (4m)</span>
+                        <p class="sub">* favourite song &ndash; stemming from my love of <a class="fav" href="https://www.google.com/search?q=the+office+us" target="_blank" rel="noopener noreferrer">The Office</a>.</p>
+                    </li>
+                    <li><a href="https://www.youtube.com/watch?v=2Jn1OeDlNpM" target="_blank" rel="noopener noreferrer">Gravity Falls extended intro</a> <span class="muted">&middot; (3m)</span></li>
+                    <li><a href="https://www.youtube.com/watch?v=vrk40pZ8Kc8" target="_blank" rel="noopener noreferrer">Michael Reeves &ndash; a boring video</a> <span class="muted">&middot; (10m)</span>
+                        <p class="sub">* watching this guy makes me excited about mechatronics.</p>
+                    </li>
+                    <li><a href="https://www.youtube.com/watch?v=u35WIs62R2M" target="_blank" rel="noopener noreferrer">Amazing Shots of CHRISTOPHER NOLAN</a> <span class="muted">&middot; (13m)</span></li>
+                    <li><a href="https://www.youtube.com/watch?v=bJjCxjS7zTo" target="_blank" rel="noopener noreferrer">Tom Platz &amp; David Hoffmann train legs together</a> <span class="muted">&middot; (53m)</span></li>
+                    <li><a href="https://www.youtube.com/watch?v=RBrt3D5rG9Q" target="_blank" rel="noopener noreferrer">Mike Tyson Training Francis Ngannou</a> <span class="muted">&middot; (51m)</span></li>
+                    <li><a href="https://www.google.com/search?q=Come+and+See" target="_blank" rel="noopener noreferrer">Come and See (1985)</a> <span class="muted">&middot; (2h 26m)</span>
+                        <p class="sub">* horrific anti-war movie on trauma and the destruction of a boy's innocence.</p>
+                    </li>
+                    <li class="fav"><a href="https://www.youtube.com/watch?v=9IiTdSnmS7E" target="_blank" rel="noopener noreferrer">Sisyphus and the Impossible Dream</a> <span class="muted">&middot; (12m)</span>
+                        <p class="sub">* on resilience and discipline &ndash; also you <u>have</u> to watch <a class="fav" href="https://www.youtube.com/watch?v=-jCQerxzF48" target="_blank" rel="noopener noreferrer">DO IT ANYWAY</a> on excuses.</p>
+                    </li>
                 </ul>
+            </section>
 
-
-
-            <p class="muted" style="margin-top:24px;">this list will grow. last updated march 2026.</p>
-            
+            <p class="muted" style="margin-top:36px; font-family:var(--mono); font-size:12px;">this list will grow. last updated: july 2026</p>
         </main>
 
-        <footer>&copy; 2026 jan pfrenger &middot; All rights reserved &middot; Made with ❤️ in Karlsruhe</footer>
+        <footer>
+            <span>&copy; 2026 jan pfrenger</span>
+            <span>karlsruhe, germany</span>
+        </footer>
     </div>
     <script src="/script.js"></script>
 </body>

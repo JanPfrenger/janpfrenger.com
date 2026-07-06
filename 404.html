@@ -4,22 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 — Jan Pfrenger</title>
+    <meta name="robots" content="noindex">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
 
-        <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    <link rel="shortcut icon" href="/assets/favicon.ico">
-
-    <!-- Apple -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-
-    <!-- Android / PWA -->
-    <link rel="manifest" href="/assets/site.webmanifest">
-    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 </head>
 <body>
     <div class="page">
@@ -28,17 +22,48 @@
             <nav class="nav-links">
                 <a href="/now">now</a>
                 <a href="/about">about</a>
+                <a href="/projects">projects</a>
+                <a href="/content">content</a>
                 <a href="/essays">essays</a>
                 <a href="/cv">cv</a>
                 <button class="theme-btn" id="themeToggle" aria-label="Toggle theme"></button>
             </nav>
         </header>
-        <main>
-            <h1>404</h1>
-            <p>this page doesn't exist. <a href="/">go home</a>.</p>
+
+        <main class="err-wrap">
+            <div class="err-code">404</div>
+            <p class="err-quote" id="errQuote">product-market fit not found.</p>
+            <p class="err-hint">reload for another excuse &middot; or go <a href="/">home</a>.</p>
         </main>
-        <footer>&copy; 2025 jan pfrenger &middot; karlsruhe</footer>
+
+        <footer>
+            <span>&copy; 2026 jan pfrenger</span>
+            <span>karlsruhe, germany</span>
+        </footer>
     </div>
     <script src="/script.js"></script>
+    <script>
+        (function () {
+            var quotes = [
+                "product-market fit not found.",
+                "this page pivoted into AI.",
+                "the MVP shipped before the page did.",
+                "burn rate exceeded runway.",
+                "we moved fast and broke this page.",
+                "this page exited unexpectedly.",
+                "the founder said “we'll fix it in production.”",
+                "this page is still in stealth mode.",
+                "the roadmap said Q4 2028.",
+                "technical debt won.",
+                "this page got acquired.",
+                "the intern deployed on friday.",
+                "grid connection request pending. estimated response: 5 years.",
+                "this page is taking a cold plunge. it'll be back.",
+                "404 GW of applications processed, but not this one."
+            ];
+            document.getElementById('errQuote').textContent =
+                quotes[Math.floor(Math.random() * quotes.length)];
+        })();
+    </script>
 </body>
 </html>
