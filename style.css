@@ -186,7 +186,7 @@ ul li { margin-bottom: 12px; }
 ul.dots { padding-left: 18px; }
 ul.dots li { list-style: none; position: relative; }
 ul.dots li::before {
-    content: "—";
+    content: "–";
     position: absolute;
     left: -18px;
     color: var(--text-2);
