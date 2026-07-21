@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css?v=20260721c">
     <link rel="canonical" href="https://janpfrenger.com/">
 
     <meta property="og:url" content="https://janpfrenger.com" />
@@ -37,16 +37,15 @@
     <div class="page">
         <header class="header">
             <a href="/" class="logo" aria-label="Jan Pfrenger, home">
-                <span class="logo-mark">JP</span>
+                <img src="/favicon-32x32.png" alt="" class="logo-mark" width="32" height="32">
                 <span>jan pfrenger</span>
             </a>
             <nav class="nav-links" aria-label="Main navigation">
                 <a href="/now">now</a>
                 <a href="/about">about</a>
                 <a href="/projects">projects</a>
-                <a href="/content">content</a>
-                <a href="/essays">essays</a>
                 <a href="/cv">cv</a>
+                <a href="/content">content</a>
                 <button class="theme-btn" id="themeToggle" aria-label="Toggle color theme" title="Toggle color theme"></button>
             </nav>
         </header>
@@ -64,7 +63,7 @@
                 </div>
 
                 <figure class="portrait-wrap">
-                    <div class="portrait-index" aria-hidden="true">01 / 03</div>
+                    <div class="portrait-index" aria-hidden="true">KA / 2026</div>
                     <img src="/assets/jan-photo.jpg?v=4" alt="Jan Pfrenger outdoors in Karlsruhe" class="portrait" />
                     <figcaption>
                         <span>Student by title.</span>
@@ -126,6 +125,32 @@
                 </div>
             </section>
 
+            <section class="network-section" aria-labelledby="network-title">
+                <div class="network-intro">
+                    <p class="eyebrow">Build surfaces</p>
+                    <h2 id="network-title">More room<br>to experiment.</h2>
+                    <p>Two quieter corners of the internet for things that need space outside the portfolio.</p>
+                </div>
+                <div class="network-grid">
+                    <a class="network-card network-card-lab" href="https://lab.janpfrenger.com">
+                        <span class="network-card-meta">01 · experiments</span>
+                        <div>
+                            <h3>Jan’s Lab</h3>
+                            <p>Prototypes, unfinished ideas, and useful technical detours.</p>
+                        </div>
+                        <span class="network-card-link">Enter the lab <span aria-hidden="true">↗</span></span>
+                    </a>
+                    <a class="network-card" href="https://apps.janpfrenger.com">
+                        <span class="network-card-meta">02 · useful software</span>
+                        <div>
+                            <h3>Apps</h3>
+                            <p>A growing index of small tools built to do one thing well.</p>
+                        </div>
+                        <span class="network-card-link">Browse apps <span aria-hidden="true">↗</span></span>
+                    </a>
+                </div>
+            </section>
+
             <section class="story-section" aria-labelledby="story-title">
                 <div class="story-label">
                     <p class="eyebrow">Short version</p>
@@ -163,6 +188,6 @@
             <a href="#top">Back to top ↑</a>
         </footer>
     </div>
-    <script src="/script.js"></script>
+    <script src="/script.js?v=20260721"></script>
 </body>
 </html>
