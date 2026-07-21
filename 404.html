@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 · Jan Pfrenger</title>
+    <meta name="description" content="You found Jan Pfrenger's favorite broken page.">
     <meta name="robots" content="noindex">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,55 +16,63 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 </head>
-<body>
-    <div class="page">
-        <header class="header">
-            <a href="/" class="logo">jan pfrenger</a>
-            <nav class="nav-links">
-                <a href="/now">now</a>
-                <a href="/about">about</a>
-                <a href="/projects">projects</a>
-                <a href="/content">content</a>
-                <a href="/essays">essays</a>
-                <a href="/cv">cv</a>
-                <button class="theme-btn" id="themeToggle" aria-label="Toggle theme"></button>
-            </nav>
+<body class="error-page">
+    <div class="error-canvas" id="errorCanvas" data-error-palette="acid" data-error-layout="split">
+        <header class="error-nav">
+            <a href="/" class="error-brand" aria-label="Jan Pfrenger, home">
+                <span class="error-brand-mark">JP</span>
+                <span>jan pfrenger</span>
+            </a>
+            <div class="error-nav-meta">
+                <span>Karlsruhe · 49.0069° N</span>
+                <span class="error-online"><i></i> creatively unavailable</span>
+            </div>
         </header>
 
-        <main class="err-wrap">
-            <div class="err-code">404</div>
-            <p class="err-quote" id="errQuote">product-market fit not found.</p>
-            <p class="err-hint">reload for another excuse &middot; or go <a href="/">home</a>.</p>
+        <main class="error-main">
+            <div class="error-index" aria-hidden="true">
+                <span>ERROR / 404</span>
+                <span id="errorCounter">CASE 01 OF 12</span>
+            </div>
+
+            <div class="error-code" aria-hidden="true">
+                <span>4</span><span class="error-zero">0</span><span>4</span>
+            </div>
+
+            <section class="error-message" aria-live="polite" aria-atomic="true">
+                <p class="error-kicker" id="errorKicker">Market research complete</p>
+                <h1 id="errorTitle">You found<br>nothing.</h1>
+                <p class="error-copy" id="errorCopy">Still a stronger result than most market research.</p>
+
+                <div class="error-meaning">
+                    <span>Unsolicited wisdom</span>
+                    <strong id="errorMeaning">Wrong turns still count as research.</strong>
+                </div>
+
+                <div class="error-actions">
+                    <a href="/" class="error-button error-button-primary">Back to civilization <span aria-hidden="true">↖</span></a>
+                    <button type="button" class="error-button" id="errorShuffle">Another failure <span aria-hidden="true">↻</span></button>
+                </div>
+            </section>
+
+            <p class="error-reload">Reloading also works. Curiosity should be rewarded.</p>
         </main>
 
-        <footer>
-            <span>&copy; 2026 jan pfrenger</span>
-            <span>karlsruhe, germany</span>
+        <div class="error-marquee" aria-hidden="true">
+            <div class="error-marquee-track">
+                <span>WRONG TURN · GOOD TASTE ·</span>
+                <span>WRONG TURN · GOOD TASTE ·</span>
+                <span>WRONG TURN · GOOD TASTE ·</span>
+                <span>WRONG TURN · GOOD TASTE ·</span>
+            </div>
+        </div>
+
+        <footer class="error-footer">
+            <span>© 2026 Jan Pfrenger</span>
+            <span>Built correctly. Routed incorrectly.</span>
+            <a href="/projects">See things that do work ↗</a>
         </footer>
     </div>
     <script src="/script.js"></script>
-    <script>
-        (function () {
-            var quotes = [
-                "product-market fit not found.",
-                "this page pivoted into AI.",
-                "the MVP shipped before the page did.",
-                "burn rate exceeded runway.",
-                "we moved fast and broke this page.",
-                "this page exited unexpectedly.",
-                "the founder said “we'll fix it in production.”",
-                "this page is still in stealth mode.",
-                "the roadmap said Q4 2028.",
-                "technical debt won.",
-                "this page got acquired.",
-                "the intern deployed on friday.",
-                "grid connection request pending. estimated response: 5 years.",
-                "this page is taking a cold plunge. it'll be back.",
-                "404 GW of applications processed, but not this one."
-            ];
-            document.getElementById('errQuote').textContent =
-                quotes[Math.floor(Math.random() * quotes.length)];
-        })();
-    </script>
 </body>
 </html>
