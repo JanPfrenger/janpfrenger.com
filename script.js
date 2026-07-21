@@ -140,7 +140,8 @@
         var errorMeaning = document.getElementById('errorMeaning');
         var errorCounter = document.getElementById('errorCounter');
         var errorShuffle = document.getElementById('errorShuffle');
-        var previousError = Number(sessionStorage.getItem('jp-error-index'));
+        var previousErrorValue = sessionStorage.getItem('jp-error-index');
+        var previousError = previousErrorValue === null ? -1 : Number(previousErrorValue);
         var currentError = Math.floor(Math.random() * errorExperiences.length);
 
         if (errorExperiences.length > 1 && currentError === previousError) {
@@ -149,10 +150,11 @@
 
         function renderError(index) {
             var experience = errorExperiences[index];
-            errorCanvas.setAttribute('data-error-palette', experience.palette);
-            errorCanvas.setAttribute('data-error-layout', experience.layout);
+            // Keep one deliberate Windows-blue error-screen identity while the copy changes.
+            errorCanvas.setAttribute('data-error-palette', 'cobalt');
+            errorCanvas.setAttribute('data-error-layout', 'split');
             errorKicker.textContent = experience.kicker;
-            errorTitle.innerHTML = experience.title.replace('\n', '<br>');
+            errorTitle.textContent = experience.title;
             errorCopy.textContent = experience.copy;
             errorMeaning.textContent = experience.meaning;
             errorCounter.textContent = 'CASE ' + String(index + 1).padStart(2, '0') + ' OF ' + errorExperiences.length;
@@ -169,12 +171,6 @@
             renderError(currentError);
         });
 
-        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-            errorCanvas.addEventListener('pointermove', function (event) {
-                errorCanvas.style.setProperty('--error-x', ((event.clientX / window.innerWidth) - 0.5).toFixed(3));
-                errorCanvas.style.setProperty('--error-y', ((event.clientY / window.innerHeight) - 0.5).toFixed(3));
-            });
-        }
     }
 
     // easter egg for the curious

@@ -52,13 +52,28 @@ body {
 }
 
 body.home {
+    position: relative;
+    background: var(--bg);
+}
+
+body.home::before,
+body.home::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    width: max(0px, calc((100% - 1600px) / 2));
+    pointer-events: none;
     background-color: var(--bg);
-    background-image: radial-gradient(circle, var(--dot-color) 1px, transparent 1.15px);
+    background-image: radial-gradient(circle, var(--dot-color) 1.3px, transparent 1.45px);
     background-size: 24px 24px;
     background-position: -1px -1px;
 }
+body.home::before { left: 0; }
+body.home::after { right: 0; }
 
-.home .page { background-color: var(--bg); }
+.home .page { position: relative; z-index: 1; background-color: var(--bg); }
 
 body.interior {
     --interior-gutter: clamp(28px, 5vw, 88px);
@@ -621,17 +636,15 @@ footer a { color: var(--text-2); text-decoration: none; }
 
 .error-page {
     overflow-x: hidden;
-    background: #d9ff62;
+    background: #2447e8;
 }
 .error-canvas {
-    --error-bg: #d9ff62;
-    --error-fg: #11130e;
-    --error-muted: rgba(17, 19, 14, .62);
-    --error-line: rgba(17, 19, 14, .23);
-    --error-accent: #ff5d3b;
-    --error-button-fg: #f3f1e8;
-    --error-x: 0;
-    --error-y: 0;
+    --error-bg: #2447e8;
+    --error-fg: #f4f1e7;
+    --error-muted: rgba(244, 241, 231, .64);
+    --error-line: rgba(244, 241, 231, .25);
+    --error-accent: #d9ff62;
+    --error-button-fg: #2447e8;
     min-height: 100svh;
     padding: 0 clamp(18px, 3.5vw, 58px);
     display: flex;
@@ -712,14 +725,20 @@ footer a { color: var(--text-2); text-decoration: none; }
 .error-main {
     position: relative;
     flex: 1;
-    min-height: 680px;
+    width: min(100%, 1280px);
+    min-height: 660px;
+    margin-inline: auto;
     display: grid;
-    grid-template-columns: minmax(0, 1.25fr) minmax(340px, .75fr);
+    grid-template-areas:
+        'index index'
+        'code message'
+        'reload reload';
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: auto 1fr auto;
-    gap: 0 clamp(32px, 6vw, 108px);
+    gap: 0 clamp(48px, 7vw, 112px);
 }
 .error-index {
-    grid-column: 1 / -1;
+    grid-area: index;
     padding: 22px 0;
     display: flex;
     justify-content: space-between;
@@ -730,17 +749,20 @@ footer a { color: var(--text-2); text-decoration: none; }
     letter-spacing: .08em;
 }
 .error-code {
+    grid-area: code;
     align-self: center;
+    justify-self: center;
+    min-width: 0;
+    max-width: 100%;
     display: flex;
     align-items: center;
     color: var(--error-fg);
     font-family: var(--display);
-    font-size: clamp(170px, 31vw, 540px);
+    font-size: clamp(160px, 21vw, 350px);
     font-weight: 600;
-    letter-spacing: -.12em;
-    line-height: .62;
-    transform: translate(calc(var(--error-x) * -16px), calc(var(--error-y) * -10px));
-    transition: color .35s ease, transform .2s ease-out;
+    letter-spacing: -.13em;
+    line-height: .75;
+    transition: color .35s ease;
     user-select: none;
 }
 .error-code span:first-child { transform: rotate(-2deg); }
@@ -766,6 +788,12 @@ footer a { color: var(--text-2); text-decoration: none; }
     transform: translate(-50%, -50%);
 }
 .error-message {
+    grid-area: message;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 460px;
+    justify-self: center;
     align-self: center;
     padding: clamp(32px, 5vw, 76px) 0;
 }
@@ -779,14 +807,15 @@ footer a { color: var(--text-2); text-decoration: none; }
     text-transform: uppercase;
 }
 .error-message h1 {
-    max-width: 9ch;
+    max-width: 100%;
     margin: 0 0 24px;
     color: var(--error-fg);
     font-family: var(--display);
-    font-size: clamp(49px, 5.8vw, 92px);
+    font-size: clamp(48px, 4.8vw, 78px);
     font-weight: 600;
     letter-spacing: -.065em;
     line-height: .88;
+    white-space: pre-line;
 }
 .error-copy { max-width: 40ch; color: var(--error-muted); font-size: 14px; line-height: 1.55; }
 .error-meaning { margin-top: clamp(30px, 4vw, 52px); padding-top: 18px; border-top: 1px solid var(--error-line); }
@@ -816,7 +845,7 @@ footer a { color: var(--text-2); text-decoration: none; }
 .error-button-primary { background: var(--error-fg); color: var(--error-button-fg); }
 .error-button-primary:hover { background: var(--error-accent); border-color: var(--error-accent); color: var(--error-fg); }
 .error-reload {
-    grid-column: 1 / -1;
+    grid-area: reload;
     padding: 16px 0;
     border-top: 1px solid var(--error-line);
     color: var(--error-muted);
@@ -825,14 +854,6 @@ footer a { color: var(--text-2); text-decoration: none; }
     letter-spacing: .06em;
     text-transform: uppercase;
 }
-
-.error-canvas[data-error-layout="poster"] .error-main { grid-template-columns: .8fr 1.2fr; }
-.error-canvas[data-error-layout="poster"] .error-code { order: 2; justify-self: end; font-size: clamp(180px, 34vw, 560px); }
-.error-canvas[data-error-layout="poster"] .error-message { order: 1; }
-.error-canvas[data-error-layout="poster"] .error-zero { font-family: var(--mono); font-style: normal; -webkit-text-stroke: 2px var(--error-fg); color: transparent; }
-.error-canvas[data-error-layout="terminal"] .error-code { font-family: var(--mono); font-weight: 400; letter-spacing: -.18em; }
-.error-canvas[data-error-layout="terminal"] .error-zero { font-family: var(--mono); font-style: normal; }
-.error-canvas[data-error-layout="terminal"] .error-message h1 { font-family: var(--mono); font-size: clamp(39px, 4.5vw, 70px); letter-spacing: -.06em; text-transform: uppercase; }
 
 .error-marquee {
     width: calc(100% + clamp(36px, 7vw, 116px));
@@ -876,6 +897,37 @@ footer a { color: var(--text-2); text-decoration: none; }
     .signal-intro p { max-width: none; }
     .signal:nth-last-child(1) { border-right: 0; }
     .project-card { min-height: 430px; }
+}
+
+@media (max-width: 900px) {
+    .error-canvas { padding-inline: 18px; }
+    .error-nav { min-height: 76px; }
+    .error-nav-meta > span:first-child { display: none; }
+    .error-main {
+        min-height: auto;
+        grid-template-areas:
+            'index'
+            'code'
+            'message'
+            'reload';
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto auto auto auto;
+    }
+    .error-code {
+        justify-self: center;
+        font-size: clamp(135px, 36vw, 260px);
+        padding: clamp(54px, 10vw, 88px) 0 26px;
+    }
+    .error-message {
+        width: 100%;
+        max-width: 620px;
+        justify-self: center;
+        padding: 30px 0 55px;
+        border-top: 1px solid var(--error-line);
+    }
+    .error-message h1 { max-width: 100%; font-size: clamp(48px, 10vw, 76px); }
+    .error-marquee { width: calc(100% + 36px); margin-left: -18px; }
+    .error-footer { align-items: flex-start; flex-direction: column; gap: 7px; }
 }
 
 @media (max-width: 780px) {
@@ -952,29 +1004,6 @@ footer a { color: var(--text-2); text-decoration: none; }
     .interior-note { margin: 28px var(--interior-gutter) 0; }
     .interior-updated { padding: 24px var(--interior-gutter) 36px; }
     .interior footer { min-height: 122px; padding: 32px var(--interior-gutter); }
-    .error-canvas { padding-inline: 18px; }
-    .error-nav { min-height: 76px; }
-    .error-nav-meta > span:first-child { display: none; }
-    .error-main,
-    .error-canvas[data-error-layout="poster"] .error-main {
-        min-height: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-    }
-    .error-code,
-    .error-canvas[data-error-layout="poster"] .error-code {
-        order: initial;
-        justify-self: center;
-        font-size: clamp(135px, 49vw, 300px);
-        padding: clamp(62px, 13vw, 100px) 0 26px;
-    }
-    .error-message,
-    .error-canvas[data-error-layout="poster"] .error-message { order: initial; padding: 30px 0 55px; border-top: 1px solid var(--error-line); }
-    .error-message h1 { max-width: 10ch; font-size: clamp(48px, 14vw, 76px); }
-    .error-canvas[data-error-layout="terminal"] .error-message h1 { font-size: clamp(37px, 10vw, 58px); }
-    .error-reload { order: initial; }
-    .error-marquee { width: calc(100% + 36px); margin-left: -18px; }
-    .error-footer { align-items: flex-start; flex-direction: column; gap: 7px; }
 }
 
 @media (max-width: 480px) {
@@ -998,8 +1027,8 @@ footer a { color: var(--text-2); text-decoration: none; }
     .home .contact-section h2 { font-size: clamp(47px, 14vw, 68px); }
     .error-online { font-size: 0; }
     .error-online::after { content: 'unavailable'; font-size: 8px; }
-    .error-code,
-    .error-canvas[data-error-layout="poster"] .error-code { font-size: clamp(115px, 48vw, 220px); }
+    .error-code { font-size: clamp(115px, 44vw, 170px); }
+    .error-message h1 { font-size: clamp(40px, 13vw, 56px); }
     .error-actions { flex-direction: column; }
     .error-button { width: 100%; }
 }
