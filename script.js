@@ -150,9 +150,9 @@
 
         function renderError(index) {
             var experience = errorExperiences[index];
-            // Keep one deliberate Windows-blue error-screen identity while the copy changes.
-            errorCanvas.setAttribute('data-error-palette', 'cobalt');
-            errorCanvas.setAttribute('data-error-layout', 'split');
+            // The visual theme changes with the joke; the underlying grid stays stable.
+            errorCanvas.setAttribute('data-error-palette', experience.palette);
+            errorCanvas.setAttribute('data-error-layout', experience.layout);
             errorKicker.textContent = experience.kicker;
             errorTitle.textContent = experience.title;
             errorCopy.textContent = experience.copy;
