@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css?v=20260721c">
+    <link rel="stylesheet" href="/style.css?v=20260721d">
     <link rel="canonical" href="https://janpfrenger.com/projects">
 
     <meta property="og:title" content="Projects · Jan Pfrenger" />
@@ -23,7 +23,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/assets/site.webmanifest">
 </head>
-<body>
+<body class="interior">
     <div class="page">
         <header class="header">
             <a href="/" class="logo" aria-label="Jan Pfrenger, home"><img src="/favicon-32x32.png" alt="" class="logo-mark" width="32" height="32"><span>jan pfrenger</span></a>
@@ -38,10 +38,13 @@
         </header>
 
         <main>
-            <h1>projects</h1>
-            <p class="page-lead" style="margin-bottom:36px;">things i'm building: hardware, software, and communities. <span class="red-highlight">red</span> means it gets most of my time right now.</p>
+            <section class="interior-hero">
+                <p class="eyebrow">/ projects</p>
+                <h1>Things worth<br><span>building.</span></h1>
+                <p class="page-lead">Hardware, software, and communities. <span class="accent-text">Green</span> marks the work getting most of my attention.</p>
+            </section>
 
-            <section>
+            <section class="interior-section project-list-section">
                 <h2>Hardware &amp; Embedded</h2>
 
                 <div class="entry">
@@ -68,7 +71,7 @@
                     <p class="entry-desc">embedded machine learning on the XIAO ESP32-S3 Sense: image classification, object detection, audio recognition, and motion analysis running on-device.</p>
                 </div>
 
-                <div class="entry">
+                <div class="entry entry-highlight">
                     <div class="entry-top">
                         <span class="entry-title">Multi-functional Desk Display</span>
                         <span class="entry-meta">in progress</span>
@@ -76,7 +79,7 @@
                     <p class="entry-desc">esp32 desktop device showing spotify status, clock, pomodoro timer, claude usage, weather, and air quality.</p>
                 </div>
 
-                <div class="entry">
+                <div class="entry entry-highlight">
                     <div class="entry-top">
                         <span class="entry-title">Running Pace Robot</span>
                         <span class="entry-meta">in progress</span>
@@ -85,9 +88,7 @@
                 </div>
             </section>
 
-            <hr>
-
-            <section>
+            <section class="interior-section project-list-section">
                 <h2>Software</h2>
 
                 <div class="entry">
@@ -115,9 +116,7 @@
                 </div>
             </section>
 
-            <hr>
-
-            <section>
+            <section class="interior-section project-list-section">
                 <h2>Communities</h2>
 
                 <div class="entry">
@@ -128,7 +127,7 @@
                     <p class="entry-desc">founded and lead the karlsruhe chapter of a 1,900+ member founder community across DACH, with partners like openai, jetbrains, siemens, and bosch. upcoming events <a href="https://luma.com/yfn-karlsruhe" target="_blank" rel="noopener noreferrer">on luma</a>.</p>
                 </div>
 
-                <div class="entry">
+                <div class="entry entry-highlight">
                     <div class="entry-top">
                         <span class="entry-title">OpenAI Codex Ambassador</span>
                         <span class="entry-meta">2026 – now</span>
@@ -145,9 +144,9 @@
                 </div>
             </section>
 
-            <p class="muted" style="margin-top:36px; font-size:14px;">more on <a href="https://github.com/JanPfrenger" target="_blank" rel="noopener noreferrer">github</a>. want to build one of these with me? <a href="mailto:hello@janpfrenger.com">say hi</a>.</p>
+            <p class="interior-note">More on <a href="https://github.com/JanPfrenger" target="_blank" rel="noopener noreferrer">GitHub</a>. Want to build one of these with me? <a href="https://www.cal.eu/janpfrenger" target="_blank" rel="noopener noreferrer">Let’s talk ↗</a></p>
 
-            <p class="muted" style="margin-top:24px; font-family:var(--mono); font-size:12px;">last updated: july 2026</p>
+            <p class="interior-updated">last updated: july 2026</p>
         </main>
 
         <footer>
@@ -155,6 +154,6 @@
             <span>karlsruhe, germany</span>
         </footer>
     </div>
-    <script src="/script.js?v=20260721"></script>
+    <script src="/script.js?v=20260721b"></script>
 </body>
 </html>

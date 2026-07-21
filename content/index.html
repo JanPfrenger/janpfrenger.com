@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css?v=20260721c">
+    <link rel="stylesheet" href="/style.css?v=20260721d">
     <link rel="canonical" href="https://janpfrenger.com/content">
 
     <meta property="og:title" content="Content I Like · Jan Pfrenger" />
@@ -23,7 +23,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/assets/site.webmanifest">
 </head>
-<body>
+<body class="interior">
     <div class="page">
         <header class="header">
             <a href="/" class="logo" aria-label="Jan Pfrenger, home"><img src="/favicon-32x32.png" alt="" class="logo-mark" width="32" height="32"><span>jan pfrenger</span></a>
@@ -38,15 +38,18 @@
         </header>
 
         <main>
-            <h1>content i like</h1>
-            <p class="page-lead" style="margin-bottom:36px;">not a "favorites" list. content that made me think differently, taught me something, or that i just genuinely enjoy. <span class="red-highlight">red</span> means it stuck with me the most.</p>
+            <section class="interior-hero">
+                <p class="eyebrow">/ content</p>
+                <h1>Things that<br><span>stuck.</span></h1>
+                <p class="page-lead">Not a favorites list—things that made me think differently, taught me something, or that I genuinely enjoy. <span class="accent-text">Green</span> marks the standouts.</p>
+            </section>
 
             <!-- entry template:
                  <li><a href="URL" target="_blank" rel="noopener noreferrer">Title</a> <span class="muted">&middot; (XXm)</span></li>
                  red:  <li class="fav"> ...
                  note: <p class="sub">* note text.</p>  (inside the li)          -->
 
-            <section>
+            <section class="interior-section content-list-section">
                 <h2>Video Essays</h2>
                 <ul>
                     <li><a href="https://www.youtube.com/watch?v=YmWgp4K9XuU" target="_blank" rel="noopener noreferrer">Critical essay on female leads in modern movies</a> <span class="muted">&middot; (13m)</span></li>
@@ -58,9 +61,7 @@
                 </ul>
             </section>
 
-            <hr>
-
-            <section>
+            <section class="interior-section content-list-section">
                 <h2>Projects</h2>
                 <ul>
                     <li><a href="https://www.youtube.com/watch?v=Nqxjfp4Gi0k" target="_blank" rel="noopener noreferrer">Salt based PCMs</a> <span class="muted">&middot; (28m)</span></li>
@@ -70,9 +71,7 @@
                 </ul>
             </section>
 
-            <hr>
-
-            <section>
+            <section class="interior-section content-list-section">
                 <h2>Other</h2>
                 <ul>
                     <li class="fav"><a href="https://33-prozent.com/" target="_blank" rel="noopener noreferrer">33 Prozent</a> <span class="muted">&middot; (8m)</span>
@@ -103,7 +102,7 @@
                 </ul>
             </section>
 
-            <p class="muted" style="margin-top:36px; font-family:var(--mono); font-size:12px;">this list will grow. last updated: july 2026</p>
+            <p class="interior-updated">this list will grow · last updated: july 2026</p>
         </main>
 
         <footer>
@@ -111,6 +110,6 @@
             <span>karlsruhe, germany</span>
         </footer>
     </div>
-    <script src="/script.js?v=20260721"></script>
+    <script src="/script.js?v=20260721b"></script>
 </body>
 </html>

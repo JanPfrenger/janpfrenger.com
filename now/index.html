@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css?v=20260721c">
+    <link rel="stylesheet" href="/style.css?v=20260721d">
     <link rel="canonical" href="https://janpfrenger.com/now">
 
     <meta property="og:title" content="Now · Jan Pfrenger" />
@@ -23,7 +23,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/assets/site.webmanifest">
 </head>
-<body>
+<body class="interior">
     <div class="page">
         <header class="header">
             <a href="/" class="logo" aria-label="Jan Pfrenger, home"><img src="/favicon-32x32.png" alt="" class="logo-mark" width="32" height="32"><span>jan pfrenger</span></a>
@@ -38,38 +38,37 @@
         </header>
 
         <main>
-            <h1>now</h1>
-            <p class="page-lead" style="margin-bottom:36px;">what has my attention at the moment.</p>
+            <section class="interior-hero">
+                <p class="eyebrow">/ now</p>
+                <h1>What has my<br><span>attention.</span></h1>
+                <p class="page-lead">A working snapshot of what I’m learning, building, and organizing right now.</p>
+            </section>
 
-            <section>
+            <section class="interior-section">
                 <h2>The Switch</h2>
                 <p>I closed the chapter on energy infrastructure this summer. Two years of grid connection work taught me plenty, including that I want to build things, not administer them. So I'm using the next months to go deep on the technical side: Python, Linux, Git, hardware prototyping (ESP32, Raspberry Pi), CAD, and AI automation, shipping visible projects along the way.</p>
             </section>
 
-            <hr>
-
-            <section>
+            <section class="interior-section">
                 <h2>Studies</h2>
                 <p>Fourth semester at KIT, figuring out my specialization. Running with KIT Run a few times a week, Judo at BCK when the schedule allows.</p>
             </section>
 
-            <hr>
-
-            <section>
+            <section class="interior-section interior-section-accent">
                 <h2>Community</h2>
-                <p>Growing the <strong>YFN Karlsruhe</strong> chapter with an amazing team, with regular events and partners like OpenAI, JetBrains, Siemens, and Bosch.</p>
-                <p>Since june i also represent <strong>OpenAI's Codex program</strong> as ambassador in Karlsruhe: workshops and events on AI-assisted engineering, 100+ people reached so far.</p>
-                <p>Still running <strong>Eisbaden Karlsruhe</strong>: weekly cold plunges, year-round, +320% members since I took over in october 2024. Next up: a medical study with students from local universities.</p>
+                <div>
+                    <p>Growing the <strong>YFN Karlsruhe</strong> chapter with an amazing team, with regular events and partners like OpenAI, JetBrains, Siemens, and Bosch.</p>
+                    <p>Since June I also represent <strong>OpenAI's Codex program</strong> as ambassador in Karlsruhe: workshops and events on AI-assisted engineering, 100+ people reached so far.</p>
+                    <p>Still running <strong>Eisbaden Karlsruhe</strong>: weekly cold plunges, year-round, +320% members since I took over in October 2024. Next up: a medical study with students from local universities.</p>
+                </div>
             </section>
 
-            <hr>
-
-            <section>
+            <section class="interior-section">
                 <h2>Building</h2>
                 <p>Shipping hardware projects end-to-end: an AI e-ink note taker, a GPS tracker, TinyML vision systems, and a running pace robot. Everything lives on <a href="/projects">the projects page</a> and <a href="https://github.com/JanPfrenger" target="_blank" rel="noopener noreferrer">github</a>.</p>
             </section>
 
-            <p class="muted" style="margin-top:36px; font-family:var(--mono); font-size:12px;">last updated: july 2026</p>
+            <p class="interior-updated">last updated: july 2026</p>
         </main>
 
         <footer>
@@ -77,6 +76,6 @@
             <span>karlsruhe, germany</span>
         </footer>
     </div>
-    <script src="/script.js?v=20260721"></script>
+    <script src="/script.js?v=20260721b"></script>
 </body>
 </html>
