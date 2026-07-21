@@ -51,6 +51,15 @@ body {
     transition: background-color .25s ease, color .25s ease;
 }
 
+body.home {
+    background-color: var(--bg);
+    background-image: radial-gradient(circle, var(--dot-color) 1px, transparent 1.15px);
+    background-size: 24px 24px;
+    background-position: -1px -1px;
+}
+
+.home .page { background-color: var(--bg); }
+
 body.interior {
     --interior-gutter: clamp(28px, 5vw, 88px);
     background-color: var(--bg);
