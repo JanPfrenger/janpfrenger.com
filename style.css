@@ -52,28 +52,16 @@ body {
 }
 
 body.home {
-    position: relative;
-    background: var(--bg);
-}
-
-body.home::before,
-body.home::after {
-    content: '';
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    bottom: 0;
-    width: max(0px, calc((100% - 1600px) / 2));
-    pointer-events: none;
+    --home-gutter: clamp(28px, 5vw, 88px);
     background-color: var(--bg);
-    background-image: radial-gradient(circle, var(--dot-color) 1.3px, transparent 1.45px);
+    background-image: radial-gradient(circle, var(--dot-color) 1px, transparent 1.15px);
     background-size: 24px 24px;
     background-position: -1px -1px;
 }
-body.home::before { left: 0; }
-body.home::after { right: 0; }
 
-.home .page { position: relative; z-index: 1; background-color: var(--bg); }
+.home .page { background: transparent; }
+.home main > section { padding-inline: var(--home-gutter); }
+.home footer { padding-inline: var(--home-gutter); }
 
 body.interior {
     --interior-gutter: clamp(28px, 5vw, 88px);
@@ -204,9 +192,6 @@ hr { margin: 64px 0; border: 0; border-top: 1px solid var(--line); }
     align-items: center;
     overflow: hidden;
     border-bottom: 1px solid var(--line);
-    background-image: radial-gradient(circle, var(--dot-color) 1px, transparent 1.15px);
-    background-size: 24px 24px;
-    background-position: -1px -1px;
 }
 .hero-copy {
     padding: clamp(68px, 8vw, 118px) clamp(36px, 6vw, 104px) clamp(62px, 8vw, 110px) 0;
@@ -954,11 +939,14 @@ footer a { color: var(--text-2); text-decoration: none; }
 
 @media (max-width: 780px) {
     .page { padding-inline: 20px; }
+    body.home { --home-gutter: 8px; }
+    .home .page { padding-inline: 16px; }
     .interior { --interior-gutter: 8px; }
     .interior .page { padding-inline: 16px; }
     .header { min-height: 0; padding: 20px 0 14px; display: block; }
     .logo { margin-bottom: 16px; }
     .nav-links { width: calc(100% + 40px); margin-left: -20px; padding: 0 20px 8px; overflow-x: auto; scrollbar-width: none; }
+    .home .nav-links,
     .interior .nav-links { width: calc(100% + 32px); margin-left: -16px; padding-inline: 16px; }
     .nav-links::-webkit-scrollbar { display: none; }
     .nav-links a { flex: 0 0 auto; }
