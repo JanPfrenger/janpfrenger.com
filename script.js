@@ -20,6 +20,69 @@
         });
     }
 
+    var supportsFollower = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (supportsFollower && !reduceMotion) {
+        var cursorFollower = document.createElement('span');
+        var followerHost = document.getElementById('errorCanvas') || document.body;
+        var targetX = -100;
+        var targetY = -100;
+        var currentX = -100;
+        var currentY = -100;
+        var followerFrame = 0;
+
+        cursorFollower.className = 'cursor-follower';
+        cursorFollower.setAttribute('aria-hidden', 'true');
+        followerHost.appendChild(cursorFollower);
+        html.classList.add('has-cursor-follower');
+
+        function drawFollower() {
+            currentX += (targetX - currentX) * 0.2;
+            currentY += (targetY - currentY) * 0.2;
+            cursorFollower.style.transform = 'translate3d(' + currentX + 'px, ' + currentY + 'px, 0) translate(-50%, -50%)';
+
+            if (Math.abs(targetX - currentX) > 0.1 || Math.abs(targetY - currentY) > 0.1) {
+                followerFrame = window.requestAnimationFrame(drawFollower);
+            } else {
+                followerFrame = 0;
+            }
+        }
+
+        function queueFollower() {
+            if (!followerFrame) followerFrame = window.requestAnimationFrame(drawFollower);
+        }
+
+        document.addEventListener('pointermove', function (event) {
+            if (!cursorFollower.classList.contains('is-visible')) {
+                currentX = event.clientX;
+                currentY = event.clientY;
+                cursorFollower.classList.add('is-visible');
+            }
+
+            targetX = event.clientX;
+            targetY = event.clientY;
+            queueFollower();
+        }, { passive: true });
+
+        document.addEventListener('pointerover', function (event) {
+            var target = event.target.closest && event.target.closest('a, button, [role="button"]');
+            cursorFollower.classList.toggle('is-interactive', Boolean(target));
+        });
+
+        document.addEventListener('pointerdown', function () {
+            cursorFollower.classList.add('is-pressed');
+        });
+
+        document.addEventListener('pointerup', function () {
+            cursorFollower.classList.remove('is-pressed');
+        });
+
+        document.addEventListener('mouseout', function (event) {
+            if (!event.relatedTarget) cursorFollower.classList.remove('is-visible');
+        });
+    }
+
     var age = document.getElementById('age');
 
     if (age) {
