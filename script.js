@@ -95,6 +95,27 @@
         age.textContent = String(calculatedAge);
     }
 
+    var talkDropdown = document.querySelector('.talk-dropdown');
+
+    if (talkDropdown) {
+        document.addEventListener('click', function (event) {
+            if (!talkDropdown.contains(event.target)) talkDropdown.removeAttribute('open');
+        });
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                talkDropdown.removeAttribute('open');
+                talkDropdown.querySelector('summary').focus();
+            }
+        });
+
+        talkDropdown.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                talkDropdown.removeAttribute('open');
+            });
+        });
+    }
+
     var errorCanvas = document.getElementById('errorCanvas');
 
     if (errorCanvas) {

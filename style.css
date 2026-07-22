@@ -284,6 +284,52 @@ hr { margin: 64px 0; border: 0; border-top: 1px solid var(--line); }
 .button-primary:hover { color: var(--accent-ink); transform: translateY(-2px); }
 .button-quiet:hover { color: var(--text); transform: translateY(-2px); }
 
+.talk-dropdown {
+    position: relative;
+    width: 190px;
+}
+.talk-dropdown summary {
+    width: 100%;
+    cursor: pointer;
+    list-style: none;
+}
+.talk-dropdown summary::-webkit-details-marker { display: none; }
+.talk-dropdown .button-quiet:hover { transform: none; }
+.talk-dropdown[open] summary { border-color: var(--accent); }
+.talk-dropdown-icon { transition: transform .2s ease; }
+.talk-dropdown[open] .talk-dropdown-icon { transform: rotate(180deg); }
+.talk-dropdown-menu {
+    position: absolute;
+    z-index: 12;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 100%;
+    border: 1px solid var(--line-strong);
+    background: var(--bg);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, .18);
+}
+.talk-dropdown-menu a {
+    min-height: 43px;
+    padding: 13px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-decoration: none;
+}
+.talk-dropdown-menu a + a { border-top: 1px solid var(--line); }
+.talk-dropdown-menu a:hover,
+.talk-dropdown-menu a:focus-visible {
+    background: var(--accent);
+    color: var(--accent-ink);
+    outline: 0;
+}
+
 .portrait-wrap {
     position: relative;
     width: min(100%, 300px);
@@ -1060,6 +1106,7 @@ footer a { color: var(--text-2); text-decoration: none; }
     .nav-links { gap: 16px; }
     .hero-actions { align-items: stretch; flex-direction: column; }
     .button { width: 100%; }
+    .talk-dropdown { width: 100%; }
     .home-hero { grid-template-columns: minmax(0, 1fr) 108px; gap: 0 14px; }
     .hero-lead { font-size: 15px; line-height: 1.55; }
     .signal-intro p { display: none; }
