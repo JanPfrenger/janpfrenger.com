@@ -4,37 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects · Jan Pfrenger</title>
-    <meta name="description" content="Hardware, software, and communities I'm building.">
+    <meta name="description" content="Build notes from Jan Pfrenger: embedded systems, robotics concepts, and communities in Karlsruhe.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css?v=20260723k">
+    <link rel="stylesheet" href="/style.css?v=20260819a">
+    <link rel="stylesheet" href="/projects.css?v=20260819d">
     <link rel="stylesheet" href="/pet.css?v=20260722f">
     <link rel="canonical" href="https://janpfrenger.com/projects">
-
-    <meta property="og:site_name" content="Jan Pfrenger" />
-    <meta property="og:title" content="Projects · Jan Pfrenger" />
-    <meta property="og:description" content="Hardware, software, and communities I'm building." />
-    <meta property="og:image" content="https://janpfrenger.com/assets/preview-2026.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Jan Pfrenger – Engineering things. Gathering people." />
-    <meta property="og:url" content="https://janpfrenger.com/projects" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Projects · Jan Pfrenger" />
-    <meta name="twitter:description" content="Hardware, software, and communities I'm building." />
-    <meta name="twitter:image" content="https://janpfrenger.com/assets/preview-2026.png" />
-    <meta name="twitter:image:alt" content="Jan Pfrenger – Engineering things. Gathering people." />
-
+    <meta property="og:site_name" content="Jan Pfrenger">
+    <meta property="og:title" content="Projects · Jan Pfrenger">
+    <meta property="og:description" content="Built, building, and still on the drawing board – with the status made explicit.">
+    <meta property="og:image" content="https://janpfrenger.com/assets/preview-2026.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Jan Pfrenger – Engineering things. Gathering people.">
+    <meta property="og:url" content="https://janpfrenger.com/projects">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/assets/site.webmanifest">
 </head>
-<body class="interior" data-site="main" data-scene="projects">
+<body class="interior project-hub" data-site="main" data-scene="projects">
     <div class="page">
         <header class="header">
             <a href="/" class="logo" aria-label="Jan Pfrenger, home"><img src="/favicon-32x32.png" alt="" class="logo-mark" width="32" height="32"><span>jan pfrenger</span></a>
@@ -49,115 +44,165 @@
         </header>
 
         <main>
-            <section class="interior-hero">
-                <p class="eyebrow">/ projects</p>
-                <h1>Things worth<br><span>building.</span></h1>
-                <p class="page-lead">Hardware, software, and communities. <span class="accent-text">Green</span> marks the work getting most of my attention.</p>
-            </section>
-
-            <section class="interior-section project-list-section">
-                <h2>Hardware &amp; Embedded</h2>
-
-                <div class="entry">
-                    <div class="entry-top">
-                        <a class="entry-title" href="https://github.com/JanPfrenger" target="_blank" rel="noopener noreferrer">AI E-Ink Note Taker</a>
-                        <span class="entry-meta">speech-to-text · e-ink</span>
-                    </div>
-                    <p class="entry-desc">AI-assisted note-taker with an e-ink display for low-power capture. end-to-end prototype that syncs notes via claude, notion, and obsidian.</p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-top">
-                        <a class="entry-title" href="https://github.com/JanPfrenger" target="_blank" rel="noopener noreferrer">GPS Tracker</a>
-                        <span class="entry-meta">esp32 · fusion 360</span>
-                    </div>
-                    <p class="entry-desc">real-time gps tracking with wireless transmission and a custom visualization interface. enclosure designed in fusion 360, made with 3d printing and cnc.</p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-top">
-                        <a class="entry-title fav" href="https://github.com/JanPfrenger" target="_blank" rel="noopener noreferrer">TinyML Vision &amp; Sensor Systems</a>
-                        <span class="entry-meta">ongoing</span>
-                    </div>
-                    <p class="entry-desc">embedded machine learning on the XIAO ESP32-S3 Sense: image classification, object detection, audio recognition, and motion analysis running on-device.</p>
-                </div>
-
-                <div class="entry entry-highlight">
-                    <div class="entry-top">
-                        <span class="entry-title">Multi-functional Desk Display</span>
-                        <span class="entry-meta">in progress</span>
-                    </div>
-                    <p class="entry-desc">esp32 desktop device showing spotify status, clock, pomodoro timer, claude usage, weather, and air quality.</p>
-                </div>
-
-                <div class="entry entry-highlight">
-                    <div class="entry-top">
-                        <span class="entry-title">Running Pace Robot</span>
-                        <span class="entry-meta">in progress</span>
-                    </div>
-                    <p class="entry-desc">robotic pacing assistant for track training on a raspberry pi: motor control, machine vision, and workout sync via claude and the garmin health API.</p>
+            <section class="interior-hero project-hero">
+                <p class="eyebrow">/ build log · 2026</p>
+                <h1>Built. Building.<br><span>Next.</span></h1>
+                <div class="project-hero-copy">
+                    <p class="page-lead">A working log of physical design, embedded systems, robotics, and communities. Each piece is separated by discipline and labelled by its real stage.</p>
+                    <p class="project-scope">objects · circuits · motion · communities</p>
                 </div>
             </section>
 
-            <section class="interior-section project-list-section">
-                <h2>Software</h2>
-
-                <div class="entry">
-                    <div class="entry-top">
-                        <span class="entry-title">Archaive</span>
-                        <span class="entry-meta">AI · files</span>
+            <section class="project-focus design-focus" id="physical-design" aria-labelledby="physical-design-title">
+                <header class="project-focus-head">
+                    <div>
+                        <p class="eyebrow">01 / physical &amp; visual design</p>
+                        <h2 id="physical-design-title">Marks that work<br>as objects.</h2>
                     </div>
-                    <p class="entry-desc">AI-powered file organization that scans your messy downloads and documents folders and proposes a clean structure, automatically.</p>
+                    <p>Translating familiar two-dimensional identities into physical forms: geometry, layers, assembly, and a clean result off-screen.</p>
+                </header>
+
+                <div class="maturity-rail design-rail" aria-label="Physical design selection">
+                    <a href="/projects/physical-design/#openai-flower" class="maturity-step">
+                        <span>form study</span>
+                        <strong>OpenAI flower</strong>
+                        <small>geometry · physical interpretation</small>
+                    </a>
+                    <a href="/projects/physical-design/#codex-mark" class="maturity-step maturity-step-built">
+                        <span>designed + fabricated</span>
+                        <strong>Codex mark</strong>
+                        <small>two-part print · fitted assembly</small>
+                    </a>
+                    <a href="/projects/physical-design/#yfn-mark" class="maturity-step">
+                        <span>identity study</span>
+                        <strong>YFN mark</strong>
+                        <small>shape · application · iteration</small>
+                    </a>
                 </div>
 
-                <div class="entry">
-                    <div class="entry-top">
-                        <span class="entry-title">Content Intelligence</span>
-                        <span class="entry-meta">tooling</span>
-                    </div>
-                    <p class="entry-desc">personal knowledge pipeline that ingests saved youtube videos, extracts transcripts, and generates searchable summaries.</p>
+                <div class="project-media-grid design-preview-grid" aria-label="Physical design preview">
+                    <figure class="media-slot media-slot-photo media-slot-caption-outside">
+                        <img src="/assets/projects/physical-design/codex-mark-finished.jpg" alt="Hand holding an assembled black and white 3D-printed Codex mark" width="1280" height="960" loading="lazy">
+                        <div class="media-slot-index">CODEX MARK · PHYSICAL RESULT</div>
+                        <figcaption><strong>From screen to assembled object</strong><span>A black inset fitted into a separately printed white base.</span></figcaption>
+                    </figure>
                 </div>
 
-                <div class="entry">
-                    <div class="entry-top">
-                        <a class="entry-title" href="https://erstie-support.lovable.app/" target="_blank" rel="noopener noreferrer">Ersti-Hilfe</a>
-                        <span class="entry-meta">web</span>
-                    </div>
-                    <p class="entry-desc">a practical survival guide for first-year university students in germany: study planning, learning tips, and the questions nobody dares to ask.</p>
-                </div>
-            </section>
-
-            <section class="interior-section project-list-section">
-                <h2>Communities</h2>
-
-                <div class="entry">
-                    <div class="entry-top">
-                        <a class="entry-title fav" href="https://youngfounders.network/" target="_blank" rel="noopener noreferrer">Young Founders Network Karlsruhe</a>
-                        <span class="entry-meta">2024 – now</span>
-                    </div>
-                    <p class="entry-desc">founded and lead the karlsruhe chapter of a 1,900+ member founder community across DACH, with partners like openai, jetbrains, siemens, and bosch. upcoming events <a href="https://luma.com/yfn-karlsruhe" target="_blank" rel="noopener noreferrer">on luma</a>.</p>
-                </div>
-
-                <div class="entry entry-highlight">
-                    <div class="entry-top">
-                        <span class="entry-title">OpenAI Codex Ambassador</span>
-                        <span class="entry-meta">2026 – now</span>
-                    </div>
-                    <p class="entry-desc">representing openai's codex program in karlsruhe's builder ecosystem. 100+ students, founders, and developers reached through workshops and events.</p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-top">
-                        <a class="entry-title" href="https://www.meetup.com/karlsruhe-cold-swimmer/" target="_blank" rel="noopener noreferrer">Eisbaden Karlsruhe</a>
-                        <span class="entry-meta">2024 – now</span>
-                    </div>
-                    <p class="entry-desc">weekly cold-plunge community in karlsruhe's rivers and lakes. +320% member growth since i took it over. we swim year-round.</p>
+                <div class="project-focus-footer">
+                    <p><span class="live-dot"></span> Existing identities, interpreted as physical objects.</p>
+                    <a class="project-action" href="/projects/physical-design/">Open physical design notes <span aria-hidden="true">↗</span></a>
                 </div>
             </section>
 
-            <p class="interior-note">More on <a href="https://github.com/JanPfrenger" target="_blank" rel="noopener noreferrer">GitHub</a>. Want to build one of these with me? <a href="https://www.cal.eu/janpfrenger" target="_blank" rel="noopener noreferrer">Let’s talk ↗</a></p>
+            <section class="project-focus" id="embedded-systems" aria-labelledby="embedded-title">
+                <header class="project-focus-head">
+                    <div>
+                        <p class="eyebrow">02 / embedded systems &amp; robotics</p>
+                        <h2 id="embedded-title">From breadboards<br>to useful devices.</h2>
+                    </div>
+                    <p>The common thread is learning by building: start with a sensor, make the data visible, then turn the working pieces into a coherent system.</p>
+                </header>
 
-            <p class="interior-updated">last updated: july 2026</p>
+                <div class="maturity-rail" aria-label="Embedded project maturity">
+                    <a href="/projects/embedded-systems/#sensor-prototypes" class="maturity-step maturity-step-built">
+                        <span>01 · built</span>
+                        <strong>Sensor &amp; display prototypes</strong>
+                        <small>ESP32 · Raspberry Pi · Arduino Nano</small>
+                    </a>
+                    <a href="/projects/embedded-systems/#desktop-companion" class="maturity-step maturity-step-building">
+                        <span>02 · in development</span>
+                        <strong>Desktop Companion</strong>
+                        <small>local sensors · REST APIs · custom UI</small>
+                    </a>
+                    <a href="/projects/embedded-systems/#pace-robot" class="maturity-step maturity-step-concept">
+                        <span>03 · concept development</span>
+                        <strong>Running Pace Robot</strong>
+                        <small>motor control · encoders · Bluetooth · safety</small>
+                    </a>
+                </div>
+
+                <div class="project-media-grid" aria-label="Embedded project media">
+                    <figure class="media-slot media-slot-wide media-slot-photo media-slot-contain media-slot-caption-outside">
+                        <img src="/assets/projects/embedded/environment-display.jpg" alt="Raspberry Pi Pico 2 breadboard with environmental sensors and a display showing live readings" width="960" height="1280" loading="lazy">
+                        <div class="media-slot-index">SENSOR DISPLAY · WORKING OUTPUT</div>
+                        <figcaption><strong>Environmental data, on-device</strong><span>Temperature, humidity, and air-quality readings processed and visualized on the breadboard display.</span></figcaption>
+                    </figure>
+                    <figure class="media-slot media-slot-photo media-slot-contain">
+                        <img src="/assets/projects/embedded/pico-2-breadboard.jpg" alt="Close-up of a Raspberry Pi Pico 2 mounted on a breadboard" width="960" height="1280" loading="lazy">
+                        <div class="media-slot-index">CONTROLLER · PICO 2</div>
+                        <figcaption><strong>Controller and wiring</strong><span>The breadboard connections and signal path behind the display.</span></figcaption>
+                    </figure>
+                    <figure class="media-slot media-slot-photo media-slot-contain">
+                        <img src="/assets/projects/embedded/servo-linkage.jpg" alt="Servo motors and 3D-printed linkages inside an eye mechanism prototype" width="1280" height="720" loading="lazy">
+                        <div class="media-slot-index">MECHANISM · MOTION TEST</div>
+                        <figcaption><strong>Servo-driven linkage</strong><span>Printed parts and micro servos assembled to test compact movement.</span></figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-focus-footer">
+                    <p><span class="live-dot"></span> Working prototypes, mechanical iterations, and build notes.</p>
+                    <a class="project-action" href="/projects/embedded-systems/">Open technical build log <span aria-hidden="true">↗</span></a>
+                </div>
+            </section>
+
+            <section class="code-strip" aria-label="GitHub projects">
+                <div>
+                    <p class="eyebrow">03 / smaller software &amp; experiments</p>
+                    <h2>Public code lives on GitHub.</h2>
+                    <p>Older tools, hackathon code, and experiments stay out of the active project list. If the repository is public, it is indexed there.</p>
+                </div>
+                <a href="https://github.com/JanPfrenger?tab=repositories" target="_blank" rel="noopener noreferrer">Browse repositories <span aria-hidden="true">↗</span></a>
+            </section>
+
+            <section class="initiative-section" aria-labelledby="initiatives-title">
+                <header class="initiative-head">
+                    <p class="eyebrow">04 / communities &amp; programs</p>
+                    <h2 id="initiatives-title">Building the room,<br>not just the thing.</h2>
+                    <p>Community work deserves evidence too: what my role is, what actually happened, and where to find the official program.</p>
+                </header>
+
+                <div class="initiative-grid">
+                    <article class="initiative-card initiative-card-accent">
+                        <div class="initiative-card-top"><span>Community · Karlsruhe</span><span>2024 – now</span></div>
+                        <div>
+                            <h3>Young Founders<br>Network</h3>
+                            <p>Co-initiated and lead the Karlsruhe chapter. Events and formats have engaged 100+ students, founders, and developers, including an event collaboration with JetBrains.</p>
+                        </div>
+                        <div class="initiative-links">
+                            <a href="/projects/yfn-karlsruhe/">Chapter notes ↗</a>
+                            <a href="https://youngfounders.network/chapter" target="_blank" rel="noopener noreferrer">Official YFN page ↗</a>
+                            <a href="https://luma.com/yfn-karlsruhe" target="_blank" rel="noopener noreferrer">Events ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="initiative-card">
+                        <div class="initiative-card-top"><span>OpenAI · Karlsruhe</span><span>2026 – now</span></div>
+                        <div>
+                            <h3>Codex<br>Ambassador</h3>
+                            <p>Selected to support Karlsruhe's builder and startup ecosystem. Developing practical formats around Codex, software development, and automation.</p>
+                        </div>
+                        <div class="initiative-links">
+                            <a href="/projects/codex-karlsruhe/">Ambassador notes ↗</a>
+                            <a href="https://openai.com/codex/" target="_blank" rel="noopener noreferrer">Explore Codex ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="initiative-card initiative-card-small">
+                        <div class="initiative-card-top"><span>Community</span><span>2024 – now</span></div>
+                        <div>
+                            <h3>Eisbaden<br>Karlsruhe</h3>
+                            <p>Weekly cold-water meetups in local rivers and lakes, all year round.</p>
+                        </div>
+                        <div class="initiative-links"><a href="https://www.meetup.com/karlsruhe-cold-swimmer/" target="_blank" rel="noopener noreferrer">Meetup ↗</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="project-contact-strip">
+                <p>Have a useful problem, a half-built device, or a room full of curious people?</p>
+                <a href="https://www.cal.eu/janpfrenger" target="_blank" rel="noopener noreferrer">Book a call <span aria-hidden="true">↗</span></a>
+            </section>
+            <p class="interior-updated">status checked against current cv · august 2026</p>
         </main>
 
         <footer>
