@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Systems Build Log · Jan Pfrenger</title>
+    <title>Embedded Systems · Jan Pfrenger</title>
     <meta name="description" content="Sensor and display prototypes, a desktop companion in development, and the architecture of a running pace robot.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css?v=20260819a">
-    <link rel="stylesheet" href="/projects.css?v=20260819e">
+    <link rel="stylesheet" href="/style.css?v=20260819d">
+    <link rel="stylesheet" href="/projects.css?v=20260819g">
     <link rel="canonical" href="https://janpfrenger.com/projects/embedded-systems/">
     <meta property="og:site_name" content="Jan Pfrenger">
-    <meta property="og:title" content="Embedded Systems Build Log · Jan Pfrenger">
+    <meta property="og:title" content="Embedded Systems · Jan Pfrenger">
     <meta property="og:description" content="Working sensor and display prototypes, a desktop companion in development, and the architecture of a running pace robot.">
     <meta property="og:image" content="https://janpfrenger.com/assets/preview-2026.png">
     <meta property="og:image:alt" content="Jan Pfrenger – Engineering things. Gathering people.">
@@ -34,7 +34,7 @@
         <main>
             <section class="interior-hero detail-hero">
                 <p class="eyebrow">/ projects / embedded systems</p>
-                <h1>Learn by<br><span>building.</span></h1>
+                <h1>Embedded<br><span>experiments.</span></h1>
                 <div class="detail-kicker">
                     <p class="page-lead">Projects at three different stages: working breadboards, a desktop device in development, and the initial architecture for a running pace robot.</p>
                 </div>
@@ -42,9 +42,9 @@
 
             <section class="detail-summary" aria-label="Project summary">
                 <div class="detail-summary-item"><span>Built with</span><strong>ESP32<br>Raspberry Pi<br>Arduino Nano</strong></div>
-                <div class="detail-summary-item"><span>Current proof</span><strong>Sensor capture<br>processing<br>visualization</strong></div>
-                <div class="detail-summary-item"><span>Building next</span><strong>Desktop<br>Companion</strong></div>
-                <div class="detail-summary-item"><span>Architecture</span><strong>Running<br>Pace Robot</strong></div>
+                <div class="detail-summary-item"><span>Built so far</span><strong>Sensors<br>processing<br>display</strong></div>
+                <div class="detail-summary-item"><span>Working on</span><strong>Desktop<br>Companion</strong></div>
+                <div class="detail-summary-item"><span>Early idea</span><strong>Running<br>Pace Robot</strong></div>
             </section>
 
             <section class="detail-chapter" id="sensor-prototypes">
@@ -53,19 +53,19 @@
                     <h2>Sensor &amp; display prototypes</h2>
                 </header>
                 <div class="detail-chapter-copy">
-                    <p>I built and programmed breadboard-based prototypes for <strong>real-time sensor data acquisition, processing, and visualization</strong>. The point was not a polished enclosure. It was getting the entire signal path to work and learning what fails between a sensor reading and something useful on a display.</p>
-                    <p>Alongside the electronics, I used 3D-printed parts, servo motors, and linkages to test compact mechanism assemblies and iterate on their physical fit and movement.</p>
-                    <p>These are the concrete hardware builds behind the shorter CV entry. The photos below document the wiring, the on-device output, and the physical iterations that do not fit into a résumé bullet.</p>
+                    <p>I built and programmed breadboard prototypes that read sensors, process the data, and show the results on a display.</p>
+                    <p>Separately, I used 3D-printed parts, servo motors, and linkages to test the fit and movement of a small eye mechanism.</p>
+                    <p>These are the builds behind the shorter CV entry. The photos show the wiring, the output, and a few mechanical iterations.</p>
                     <ul class="detail-tech"><li>ESP32</li><li>Raspberry Pi</li><li>Arduino Nano</li><li>sensor integration</li><li>display integration</li><li>servo mechanisms</li><li>3D-printed parts</li></ul>
                 </div>
                 <div class="project-media-grid media-grid-trio">
-                    <figure class="media-slot media-slot-photo media-slot-focus-display media-slot-caption-top"><img src="/assets/projects/embedded/environment-display.jpg" alt="Raspberry Pi Pico 2 breadboard with temperature, humidity, and air-quality sensors connected to a display" width="960" height="1280" loading="lazy"><div class="media-slot-index">SENSOR DISPLAY · WORKING OUTPUT</div><figcaption><strong>Environmental sensing prototype</strong><span>A Pico 2 processes temperature, humidity, and air-quality readings and visualizes them locally.</span></figcaption></figure>
-                    <figure class="media-slot media-slot-photo"><img src="/assets/projects/embedded/pico-2-breadboard.jpg" alt="Close-up of a Raspberry Pi Pico 2 mounted on a breadboard" width="960" height="1280" loading="lazy"><div class="media-slot-index">CONTROLLER · PICO 2</div><figcaption><strong>Pico 2 integration</strong><span>Controller and breadboard connections behind the sensing prototype.</span></figcaption></figure>
-                    <figure class="media-slot media-slot-photo"><img src="/assets/projects/embedded/servo-linkage.jpg" alt="Servo motors and 3D-printed linkages inside an eye mechanism prototype" width="1280" height="720" loading="lazy"><div class="media-slot-index">BUILD 02 · MECHANISM</div><figcaption><strong>Servo-driven linkage</strong><span>Printed parts, servo motors, and linkages assembled for movement tests.</span></figcaption></figure>
+                    <figure class="media-slot media-slot-photo media-slot-focus-display media-slot-caption-top"><img src="/assets/projects/embedded/environment-display.jpg" alt="Raspberry Pi Pico 2 breadboard with temperature, humidity, and air-quality sensors connected to a display" width="960" height="1280" loading="lazy"><div class="media-slot-index">SENSOR DISPLAY · WORKING</div><figcaption><strong>Live sensor readout</strong><span>Temperature, humidity, and air-quality values shown on the display.</span></figcaption></figure>
+                    <figure class="media-slot media-slot-photo"><img src="/assets/projects/embedded/pico-2-breadboard.jpg" alt="Close-up of a Raspberry Pi Pico 2 mounted on a breadboard" width="960" height="1280" loading="lazy"><div class="media-slot-index">CONTROLLER · PICO 2</div><figcaption><strong>Pico 2 and wiring</strong><span>The controller and breadboard connections behind the display.</span></figcaption></figure>
+                    <figure class="media-slot media-slot-photo"><img src="/assets/projects/embedded/servo-linkage.jpg" alt="Servo motors and 3D-printed linkages inside an eye mechanism prototype" width="1280" height="720" loading="lazy"><div class="media-slot-index">MECHANISM · SERVOS</div><figcaption><strong>Servo linkage</strong><span>Printed parts and servo motors assembled for a movement test.</span></figcaption></figure>
                 </div>
                 <div class="project-media-grid media-grid-pair">
-                    <figure class="media-slot media-slot-photo"><img src="/assets/projects/embedded/mechanical-iteration.jpg" alt="Disassembled white and red 3D-printed mechanism parts on a wooden table" width="1280" height="960" loading="lazy"><div class="media-slot-index">ITERATION 01 · DISASSEMBLED</div><figcaption><strong>Mechanical iteration</strong><span>Printed shell, brackets, and gears between assembly passes.</span></figcaption></figure>
-                    <figure class="media-slot media-slot-photo"><img src="/assets/projects/embedded/assembled-eye-module.jpg" alt="Small assembled 3D-printed eye module held in one hand" width="1280" height="960" loading="lazy"><div class="media-slot-index">ITERATION 02 · ASSEMBLED</div><figcaption><strong>Eye module fit check</strong><span>The printed shell and eye insert assembled into a compact module.</span></figcaption></figure>
+                    <figure class="media-slot media-slot-photo"><img src="/assets/projects/embedded/mechanical-iteration.jpg" alt="Disassembled white and red 3D-printed mechanism parts on a wooden table" width="1280" height="960" loading="lazy"><div class="media-slot-index">MECHANISM · DISASSEMBLED</div><figcaption><strong>Parts between tests</strong><span>The printed shell, brackets, and gears taken apart again.</span></figcaption></figure>
+                    <figure class="media-slot media-slot-photo"><img src="/assets/projects/embedded/assembled-eye-module.jpg" alt="Small assembled 3D-printed eye module held in one hand" width="1280" height="960" loading="lazy"><div class="media-slot-index">MECHANISM · ASSEMBLED</div><figcaption><strong>Eye module fit check</strong><span>The printed shell and eye insert assembled.</span></figcaption></figure>
                 </div>
             </section>
 
@@ -75,8 +75,8 @@
                     <h2>Desktop Companion</h2>
                 </header>
                 <div class="detail-chapter-copy">
-                    <p>The next step is a modular desktop device that combines <strong>local sensors, external APIs, and a custom interface</strong>. It grows directly out of the working sensor and display prototypes, but the complete device is still in development.</p>
-                    <p>The current work is at system level: deciding how the modules communicate, what belongs on-device, and how the interface should connect the physical and digital parts.</p>
+                    <p>I’m developing a modular desktop device that combines <strong>local sensors, external APIs, and a custom interface</strong>. The complete device is still in development.</p>
+                    <p>Right now I’m working out how the modules communicate, what belongs on the device, and how the interface connects the physical and digital parts.</p>
                     <ul class="detail-tech"><li>ESP32</li><li>REST APIs</li><li>local sensors</li><li>display UI</li><li>modular architecture</li></ul>
                 </div>
             </section>
@@ -87,12 +87,12 @@
                     <h2>From the lab shelf</h2>
                 </header>
                 <div class="detail-chapter-copy">
-                    <p>Small component tests and hardware exercises that are useful learning records, but <strong>not presented as stages of the projects above</strong>.</p>
+                    <p>Standalone component tests and hardware exercises. They are <strong>not stages of the projects above</strong>.</p>
                     <a class="detail-inline-link" href="https://lab.janpfrenger.com" target="_blank" rel="noopener noreferrer">Visit Jan's Lab <span aria-hidden="true">↗</span></a>
                 </div>
                 <div class="project-media-grid media-grid-pair">
-                    <figure class="media-slot media-slot-photo media-slot-focus-upper"><img src="/assets/projects/embedded/component-test-rig.jpg" alt="Temporary breadboard setup connected to an adjustable power supply" width="720" height="1280" loading="lazy"><div class="media-slot-index">BENCH TEST · COMPONENT SETUP</div><figcaption><strong>Isolated component test</strong><span>A temporary breadboard setup with an adjustable supply for trying one part at a time.</span></figcaption></figure>
-                    <figure class="media-slot media-slot-photo media-slot-focus-module"><img src="/assets/projects/embedded/xiaoml-camera-module.jpg" alt="XIAOML compact camera module and connector on a wooden desk" width="720" height="1280" loading="lazy"><div class="media-slot-index">VISION · CAMERA MODULE</div><figcaption><strong>Compact vision module</strong><span>A XIAOML camera module for hands-on embedded computer-vision exercises.</span></figcaption></figure>
+                    <figure class="media-slot media-slot-photo media-slot-focus-upper"><img src="/assets/projects/embedded/component-test-rig.jpg" alt="Temporary breadboard setup connected to an adjustable power supply" width="720" height="1280" loading="lazy"><div class="media-slot-index">BENCH TEST · COMPONENT</div><figcaption><strong>Component test</strong><span>A temporary breadboard setup connected to an adjustable supply.</span></figcaption></figure>
+                    <figure class="media-slot media-slot-photo media-slot-focus-module"><img src="/assets/projects/embedded/xiaoml-camera-module.jpg" alt="XIAOML compact camera module and connector on a wooden desk" width="720" height="1280" loading="lazy"><div class="media-slot-index">CAMERA MODULE · XIAOML</div><figcaption><strong>XIAOML camera module</strong><span>A small camera module I used for embedded computer-vision exercises.</span></figcaption></figure>
                 </div>
             </section>
 
@@ -102,8 +102,8 @@
                     <h2>Running Pace Robot</h2>
                 </header>
                 <div class="detail-chapter-copy">
-                    <p>I have defined requirements and developed an initial architecture covering <strong>motor control, encoder feedback, Bluetooth configuration, and fail-safe operation</strong>.</p>
-                    <p>The next engineering milestone is a drive-base test that turns the architecture into measurable hardware behaviour.</p>
+                    <p>So far, I have written requirements and an initial architecture covering <strong>motor control, encoder feedback, Bluetooth configuration, and fail-safe operation</strong>.</p>
+                    <p>The next step is a first drive-base test. There is no working robot yet.</p>
                     <ul class="detail-tech"><li>requirements</li><li>motor control</li><li>encoder feedback</li><li>Bluetooth</li><li>fail-safe operation</li></ul>
                 </div>
             </section>
